@@ -28,6 +28,14 @@ It contains COVID-19 case and death time series by race/ethnicity.
 
 For more information, please consult the associated [README file](./target-data/README.md)
 
+## Auxiliary Data
+
+An additional repository containing the auxiliary data is available on GitHub: 
+[covid19-smh-research_resources](https://github.com/midas-network/covid19-smh-research_resources).
+This repository contains additional code and data that are relevant to the 
+modeling efforts. 
+
+
 ## Data license and reuse
 
 All source code that is specific to the overall project is available under an 
