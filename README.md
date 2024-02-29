@@ -42,7 +42,7 @@ contact Katriona Shea at k-shea@psu.edu. Additional resources might be available
 from the ]MIDAS Coordination Center](https://midasnetwork.us/) - please 
 contact questions@midasnetwork.us for information.
 
-## The RSV Scenario Modeling Hub Coordination Team    
+## The Scenario Modeling Hub Coordination Team    
 
  - Shaun Truelove, Johns Hopkins University
  - Cécile Viboud, NIH Fogarty
@@ -58,4 +58,6 @@ contact questions@midasnetwork.us for information.
  - Sung-mok Jung, University of North Carolina
  - Jessi Espino, University of Pittsburgh
  - John Levander, University of Pittsburgh
+ - Samantha Bents, NIH Fogarty
  - Katie Yan, Penn State University
+
