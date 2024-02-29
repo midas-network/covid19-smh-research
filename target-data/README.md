@@ -12,6 +12,19 @@ For any questions or issues, please contact sbents@alumni.princeton.edu.
 
 Data is reported for incident cases and deaths. 
 
+- [target_data_phase1.csv](./target_data_phase1.csv): Calibration 
+data to be used for Phase 1. 
+This file contains incident cases and deaths for California and 
+North Carolina as reported to respective public health departments 
+up until 11/14/2020. 
+
+- [target_data_phase2.csv](./target_data_phase2.csv): Calibration data 
+to be used for Phase 2. 
+This file contains incident cases and deaths for California and 
+North Carolina as reported to respective public health departments 
+up until 4/3/2021.
+
+
 Race/ethnicity grouping in North Carolina 
 includes `"black"`, `"white"`,  `"asian"`, and `"other"`. 
 Here `"other"`  represents the sum of other and Hispanic/Latino. 
@@ -20,18 +33,6 @@ Race/ethnicity
 grouping in California includes `"latino"`, `"black"`, `"white"`, 
 `"asian"`, and `"other"`. All non-Latino groups are non-Hispanic and 
 `"latino"` represents both Latino and Hispanic. 
-
-[`target_data_phase1.csv`](./target_data_phase1.csv): Calibration 
-data to be used for Phase 1. 
-This file contains incident cases and deaths for California and 
-North Carolina as reported to respective public health departments 
-up until 11/14/2020. 
-
-[target_data_phase2.csv](./target_data_phase2.csv): Calibration data 
-to be used for Phase 2. 
-This file contains incident cases and deaths for California and 
-North Carolina as reported to respective public health departments 
-up until 4/3/2021.
 
 Case demographic data is sourced from the 
 [COVID-19 Race-Ethnicity Timeseries](https://data.chhs.ca.gov/dataset/covid-19-equity-metrics/resource/ef29f30e-320c-46cf-86cd-37a36663616d) from 
@@ -43,7 +44,7 @@ Death demographic data is sourced from
 
 ### Overall population data
 
-[cases_overall_jhu.csv](./cases_overall_jhu.csv): Overall cases reported 
+- [cases_overall_jhu.csv](./cases_overall_jhu.csv): Overall cases reported 
 to Johns Hopkins Center for Systems Science and Engineering (JHU-CSSE) 
 in California and North Carolina. This gives full cases reported, whereas 
 the public health department case data has some missingness by 
