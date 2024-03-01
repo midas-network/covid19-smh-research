@@ -47,7 +47,7 @@ data (available under specified licenses as described above) and auxiliary data.
 
 Those teams interested in accessing additional computational power should 
 contact Katriona Shea at k-shea@psu.edu. Additional resources might be available 
-from the ]MIDAS Coordination Center](https://midasnetwork.us/) - please 
+from the [MIDAS Coordination Center](https://midasnetwork.us/) - please 
 contact questions@midasnetwork.us for information.
 
 ## The Scenario Modeling Hub Coordination Team    
