@@ -3,10 +3,12 @@
 This folder is used to store target data (also called "ground truth" or 
 "truth data") relevant to the modeling efforts.
 
-It contains the calibration data for phase 1 and 2 of the COVID-19
-Scenario Modeling Hub (SMH) Disparities Round. 
+For any questions or issues, please feel free to open an issue. 
 
-For any questions or issues, please contact sbents@alumni.princeton.edu. 
+## Disparities Round
+
+This folder contains the calibration data for phase 1 and 2 of the COVID-19
+Scenario Modeling Hub (SMH) Disparities Round. 
 
 ### Demographic data
 
