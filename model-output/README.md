@@ -92,9 +92,10 @@ arrow::write_parquet(df, filename, compression = "gzip", compression_level = 9)
 arrow::read_parquet(filename)
 ```
 
-The date YYYY-MM-DD should correspond to the start date for scenarios
-projection ("first date of simulated transmission/outcomes" as noted in the
-scenario description on the main 
+For the disparities round, the date YYYY-MM-DD should correspond to the 
+**due date**, for example: "`2024-03-26`" from 
+"Phase 1 projections due: March 26, 2024" as noted in the scenario 
+description on the main 
 [README, Submission Information](https://github.com/midas-network/rsv-scenario-modeling-hub)).
 
 The `team` and `model` in this file must match the `team` and `model` in the 
@@ -151,8 +152,6 @@ Values in the `origin_date` column must be a date in the format
     
 The `origin_date` is the start date for scenarios (first date of 
 simulated transmission/outcomes).
-The "origin_date" and date in the filename should correspond.
-
 
 ### `scenario_id`
 
