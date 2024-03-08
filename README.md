@@ -233,8 +233,7 @@ In California, required racial/ethnic groups are `"latino"`, `"black"`,
 Alaska Native and Native Hawaiian and Pacific Islander. 
 
 In North Carolina, required racial/ethnic groups are `"white"`, `"black"`, `"asian"`,
-and `"other"`, where `"other"` represents non-White Hispanic and American Indian 
-Alaska Native. 
+and `"other"`, where `"other"` represents the sum of other and Hispanic/Latino.
 
 Given the missingness in demographic disease data and limited data available on 
 case reporting rates by race/ethnicity, infections and cases will not be evaluated. 
