@@ -275,7 +275,7 @@ The folder contains multiple sub-folders:
 - Start date for scenarios: Sunday November 15, 2020 (first date of simulated 
  transmission/outcomes)
 - Simulation end date: April 3, 2021 (20-week horizon)
-- **Phase 1 projections due: March 26, 2024**
+- **Phase 1 projections due: Mid-May 2024 (soft deadline)**
 
 ##### Submission requirements
 
