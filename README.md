@@ -59,10 +59,10 @@ consultation with academic modeling teams and government agencies (e.g., CDC).
 ### Disparities Round Phase 1: Can we accurately predict COVID-19 death disparities by race/ethnicity?
 
 In Phase 1, teams will calibrate to case and death data by race/ethnicity from
-5/1/2020 – 11/14/2020 and project forward 11/15/2020 – 4/3/2021 in a single
+5/1/2020 – 11/14/2020 and project forward to 11/15/2020 – 4/3/2021 in a single
 Scenario A. Teams are required to incorporate health inequities that contribute
 to differential transmission risk and severity by race/ethnicity, where
-severity is defined at the probability of death given infection. Teams will be
+severity is defined as the probability of death given infection. Teams will be
 evaluated on their ability to model race/ethnicity-specific death time series
 throughout the projection period in Phase 1. We will assume that we have
 prescribed the perfect scenario conditions; thus full information about new
@@ -267,7 +267,7 @@ The folder contains multiple sub-folders:
 - Population Data: state-level population structure data by age and race/ethnicity
 - Hospitalization: hospitalization time series by race/ethnicity, in a rate per 100,000 
   people for California and number of hospitalizations for North Carolina
-- Contact Matrix: synthetic daily contact matrices by race/ethnicity in the household, 
+- Contacts: synthetic daily contact matrices by race/ethnicity in the household, 
   school, community, workplace setting in the pre-pandemic and pandemic period
 
 ### Submission Information
