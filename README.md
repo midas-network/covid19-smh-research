@@ -9,12 +9,16 @@ collaborative modeling. GitHub release v2.0.0, 14 Jul 2023. URL: https://github.
 
 ## Research vs. Operational Rounds
 
-This repository is intended for the Scenario Modeling Hub's _research_ rounds, which are intended to encourage modeling 
-to address specific research questions. Possibilities that have been discussed include the impact of disparities (desscribed below) 
-revisiting early stages of a pandemic. Additional research rounds may follow. 
+This repository is intended for the Scenario Modeling Hub's _research_ rounds, 
+which are intended to encourage modeling to address specific research questions. 
+Possibilities that have been discussed include the impact of disparities (described 
+below) revisiting early stages of a pandemic. Additional research rounds may 
+follow. 
 
-The research rounds are distinct from the _operational_ rounds were the sole focus of the Scenario Modeling Hub from 
-late 2020-April 2024. For information on those efforts, see the [operational round GitHub site](https://github.com/midas-network/covid19-scenario-modeling-hub).
+The research rounds are distinct from the _operational_ rounds were the sole 
+focus of the Scenario Modeling Hub from 
+late 2020-April 2024. For information on those efforts, see the 
+[operational round GitHub site](https://github.com/midas-network/covid19-scenario-modeling-hub).
 
 ## How to participate    
 
