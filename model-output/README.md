@@ -169,7 +169,7 @@ The submission can contain multiple output type information:
   will call this format "sample" output type. For more information, please
   consult the [sample](./data-processed#sample) 
   section.
-- A set of quantiles value for all the targets (except peak timing).
+- A set of quantiles value for all the targets.
   We will call this format "quantile" output type. For more information, 
   please consult the [quantile](./data-processed#quantile) 
   section. 
