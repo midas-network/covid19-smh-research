@@ -303,8 +303,8 @@ The folder contains multiple sub-folders:
   	- California: `"latino"`, `"black"`, `"white"`, `"asian"`, `"other"`, and `"overall"`. 
   	- North Carolina: `"black"`, `"white"`, `"asian"`, `"other"`, and `"overall"`.
 
-  - Optional to also provide weekly incidant cases by location 
-  and major racial/ethnic group (as previously stated)
+- Optional target: weekly incident cases by location and major
+  racial/ethnic group (as previously stated)
 
 - We required 100-300 individual trajectories for each target. Trajectories 
   should be sampled in such a way that they will be most likely to produce 
