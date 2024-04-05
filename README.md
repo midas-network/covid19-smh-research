@@ -237,22 +237,23 @@ documentation associated with the
 In this round, the required target for trajectories will be **weekly incident
 infections, cases, and deaths in California and North Carolina for a set of
 specified racial/ethnic groups.** Trajectories will need to be paired across
-racial/ethnic groups (i.e., for a given model, location, scenario and horizon,
-all race/ethnicity data for simulation 1 corresponds to the sum of
+racial/ethnic groups ann horizaom (i.e., for a given model, location, scenario 
+and horizon, all race/ethnicity data for simulation 1 corresponds to the sum of
 race/ethnicity-specific estimates for simulation 1). 
 
 In California, required racial/ethnic groups are `"latino"`, `"black"`, 
-`"white"`, `"asian"`, and `"other"`, where `"other"` represents American Indian 
-Alaska Native and Native Hawaiian and Pacific Islander. 
+`"white"`, `"asian"`, `"other"`, and `"overall"`. 
 
 In North Carolina, required racial/ethnic groups are `"white"`, `"black"`, `"asian"`,
-and `"other"`, where `"other"` represents the sum of other and Hispanic/Latino.
+`"other"`, and `"overall"`.
 
-Given the missingness in demographic disease data and limited data available on 
-case reporting rates by race/ethnicity, infections and cases will not be evaluated. 
+The definitions of race/ethnicity can differ across various datasets. For more
+information please consult the [target data README](./target-data/README.md).
 
-Teams will be submitting cases and infections for the purpose of model comparison and 
-weekly death targets will be evaluated. 
+Given the missingness in demographic disease data and limited data available on case 
+reporting rates by race/ethnicity, it will be optional for teams to submit cases. 
+Infections and deaths will be required and only weekly death targets will be evaluated. 
+
 
 ### Additional Information
 
@@ -296,15 +297,21 @@ The folder contains multiple sub-folders:
   Saturday, April 3, 2021 (20 week projection period). Weeks follow epi-weeks 
   (Sun-Sat) dated by the last day of the week. 
 
-- Weekly targets: Weekly incident infections, cases, and deaths by location 
+- Weekly targets: Weekly incident infections, deaths by location 
   and major racial/ethnic group. We require the following racial/ethnic groups 
   by state:
-  	- California: `"latino"`, `"black"`, `"white"`, `"asian"`, and `"other"`. 
-  	- North Carolina: `"black"`, `"white"`, `"asian"`, and `"other"`.
+  	- California: `"latino"`, `"black"`, `"white"`, `"asian"`, `"other"`, and `"overall"`. 
+  	- North Carolina: `"black"`, `"white"`, `"asian"`, `"other"`, and `"overall"`.
 
-- 100-300 individual trajectories for each target. Trajectories should be sampled 
-  in such a way that they will be most likely to produce the uncertainty of the 
-  simulated process. 
+  - Optional to also provide weekly incidant cases by location 
+  and major racial/ethnic group (as previously stated)
+
+- We required 100-300 individual trajectories for each target. Trajectories 
+  should be sampled in such a way that they will be most likely to produce 
+  the uncertainty of the simulated process. Projection quantiles are optional.
+  	- For teams who wish to submit quantiles, the format is in accordance with 
+  	prior SMh rounds. We ask for the following quantiles: 
+  	0.01, 0.025, 0.05, every 5% to 0.95, 0.975, and 0.99
 
 - Metadata: We will require a brief meta-data from all teams.
 

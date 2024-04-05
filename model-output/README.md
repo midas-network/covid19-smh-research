@@ -80,7 +80,7 @@ The "arrow" library can be used to read/write the files in
 Other tools are also accessible, for example [parquet-tools](https://github.com/hangxie/parquet-tools)
 
 For example, in R:
-```
+```R
 # To write "parquet" file format:
 filename <- ”path/YYYY-MM-DD-team_model.parquet”
 arrow::write_parquet(df, filename)
@@ -174,24 +174,20 @@ The submission can contain multiple output type information:
   please consult the [quantile](./data-processed#quantile) 
   section. 
 
-The requested targets are (for "sample" type output):
+The requested targets are:
 
-- weekly incident infections
-- weekly incident cases
+- weekly incident infections 
 - weekly incident deaths
 
-Optional target (for "quantile" type output):
+Optional target :
 
-- quantile:
-    - weekly cumulative hospitalizations
-    - weekly incident hospitalizations
-    - peak size hospitalizations
+- weekly incident case
 
 Values in the `target` column must be one of the following character strings:
 
 - `"inc inf"`
-- `"inc case"`
 - `"inc death"`
+- `"inc case"`
 
 
 #### inc inf
@@ -206,21 +202,6 @@ Saturday, inclusive).
 
 Projections of infections will be used to compare outputs between 
 models but will not be evaluated against observations.  
- 
-
-#### inc case
-
-This target is the incident (weekly) number of cases 
-predicted by the model during the week that is N weeks after 
-`origin_date`. 
-
-A week-ahead scenario should represent the total number of new 
-cases reported during a given epiweek (from Sunday through Saturday, 
-inclusive).
-
-Projections of infections will be used to compare outputs between 
-models but will not be evaluated against observations. 
-
 
 #### inc death
 
@@ -237,6 +218,20 @@ the death demographic data from The National Center for Health Statistics,
 available in the 
 [target-data](https://github.com/midas-network/covid19-smh-research/tree/main/target-data)
 folder.
+
+
+#### inc case
+
+This target is the incident (weekly) number of cases 
+predicted by the model during the week that is N weeks after 
+`origin_date`. 
+
+A week-ahead scenario should represent the total number of new 
+cases reported during a given epiweek (from Sunday through Saturday, 
+inclusive).
+
+Projections of infections will be used to compare outputs between 
+models but will not be evaluated against observations. 
 
 
 ### `location`
@@ -326,8 +321,6 @@ Teams should provide the following 23 quantiles:
 0.550 0.600 0.650 0.700 0.750, 0.800 0.850 0.900 0.950 0.975 0.990 
 ```
 
-An optional `0`  and `1` value can also be provided.
-
 For example:
 
 |origin_date|scenario_id|location|target|horizon|age_group|output_type|output_type_id|run_grouping|stochastic_run|value|
@@ -352,6 +345,7 @@ Accepted values in the  `race_ethnicity` column are:
 - "latino" (accepted only for California ("06"))
 - "other"
 - "black"
+- "overall"
 
 ----
 
