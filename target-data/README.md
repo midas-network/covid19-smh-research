@@ -50,7 +50,7 @@ detailed information on suppression from
 [NC COVID-19 Dashboard Data](https://covid19.ncdhhs.gov/dashboard/data-behind-dashboards)
 from the North Carolina Department of Public Health.
 
-- [`source/NCHS_death_source_data.csv`](./source/NCHS_death_source_data/csv): 
+- [`source/NCHS_death_source_data.csv`](./source/NCHS_death_source_data.csv): 
 data from The National Center for Health Statistics where total number of 
 suppressed deaths that occurred before the end of 
 the projection period in each state so that teams can distribute suppression 
