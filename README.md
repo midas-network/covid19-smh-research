@@ -247,12 +247,13 @@ In California, required racial/ethnic groups are `"latino"`, `"black"`,
 In North Carolina, required racial/ethnic groups are `"white"`, `"black"`, `"asian"`,
 `"other"`, and `"overall"`.
 
-The definitions of race/ethnicity can differ across various datasets. For more
-information please consult the [target data README](./target-data/README.md).
+The definitions of race/ethnicity can differ across various datasets.
 
 Given the missingness in demographic disease data and limited data available on case 
 reporting rates by race/ethnicity, it will be optional for teams to submit cases. 
 Infections and deaths will be required and only weekly death targets will be evaluated. 
+
+For more information please consult the [target data README](./target-data/README.md).
 
 
 ### Additional Information
