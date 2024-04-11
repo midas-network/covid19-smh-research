@@ -42,12 +42,21 @@ from the North Carolina Department of Public Health.
 Death demographic data is sourced from 
 [The National Center for Health Statistics](https://wonder.cdc.gov/mcd-icd10-provisional.html) 
 
+#### Source:
+
 - [`source/nc_case_demographics_county.csv`](./source/nc_case_demographics_county.csv): 
 raw county-level estimates of cases by race in North Carolina with more 
 detailed information on suppression from 
 [NC COVID-19 Dashboard Data](https://covid19.ncdhhs.gov/dashboard/data-behind-dashboards)
 from the North Carolina Department of Public Health.
 
+- [`source/NCHS_death_source_data.csv`](./source/NCHS_death_source_data/csv): 
+data from The National Center for Health Statistics where total number of 
+suppressed deaths that occurred before the end of 
+the projection period in each state so that teams can distribute suppression 
+using the method they prefer. We deduced from public health department data 
+that there are 1932 total suppressed deaths in California and 223 total 
+suppressed deaths in North Carolina over the study period.
 
 ### Overall population data
 
@@ -92,11 +101,15 @@ GitHub repository,
 
 #### NCHS Death data
 
-In the target death data, there are more detailed breakups of the same population groups. 
-This dataset is also subject to a small proportion of known suppression which has been
-distributed uniformly across suppressed groups. This is noted in the `“suppressed”` column 
-in the target data files. Teams will be evaluated on the sum of the  `"value"` 
-columns in the target death data.
+In the target death data, there are more detailed breakups of the same population 
+groups. This dataset is also subject to a small proportion of known suppression, 
+where suppressed values can range from 1-9. We have set all suppressed values to 
+the minimum value of 1 and this is noted in the "min_suppressed" column in the 
+target data files. 
+
+Teams will be evaluated on the sum of the "value" and "min_suppressed" columns 
+in the target death data, since this represents the most complete and accurate 
+version of the dataset. 
 
 |State|Race_ethnicity|Target Data|
 |:---|:----|:----|

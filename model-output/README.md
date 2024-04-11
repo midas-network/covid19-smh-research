@@ -219,6 +219,10 @@ available in the
 [target-data](https://github.com/midas-network/covid19-smh-research/tree/main/target-data)
 folder.
 
+Teams will be evaluated on the sum of the `"value"` and `"min_suppressed"` columns 
+in the target death data, since this represents the most complete and accurate 
+version of the dataset. 
+
 
 #### inc case
 
