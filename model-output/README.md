@@ -93,8 +93,8 @@ arrow::read_parquet(filename)
 ```
 
 For the disparities round, the date YYYY-MM-DD should correspond to the 
-**due date**, for example: "`2024-03-26`" from 
-"Phase 1 projections due: March 26, 2024" as noted in the scenario 
+**due date**, for example: "`2024-05-15`" from 
+"Phase 1 projections due: mid-May" as noted in the scenario 
 description on the main 
 [README, Submission Information](https://github.com/midas-network/rsv-scenario-modeling-hub)).
 
@@ -125,8 +125,8 @@ The output file must contain eleven columns (in any order):
 
 No additional columns are allowed.
 
-Each row in the file is a specific type for a scenario for a location on
-a particular date for a particular target. 
+Each row in the file is a specific type for a scenario, a location,
+a race/ethnicity on a particular date for a particular target. 
 
 #### Column format
 
@@ -169,7 +169,7 @@ The submission can contain multiple output type information:
   will call this format "sample" output type. For more information, please
   consult the [sample](./data-processed#sample) 
   section.
-- A set of quantiles value for all the targets.
+- An optional set of quantiles value for all the targets.
   We will call this format "quantile" output type. For more information, 
   please consult the [quantile](./data-processed#quantile) 
   section. 
@@ -292,7 +292,7 @@ identifier for each group containing all the possible value for `"race_ethnicity
 and `"horizon"`.
 
 Fore more information and examples, please consult the 
-[Sample Format Wiki page](https://github.com/midas-network/rsv-scenario-modeling-hub/wiki/Sample-File-Format).
+[Sample Format Documentation page](https://scenariomodelinghub.org/documentation/sample_format.html).
 
 For example:
 
@@ -324,6 +324,9 @@ Teams should provide the following 23 quantiles:
 0.010 0.025 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450 0.500
 0.550 0.600 0.650 0.700 0.750, 0.800 0.850 0.900 0.950 0.975 0.990 
 ```
+ 
+ An optional `0` and `1` quantile can also be provided.
+
 
 For example:
 

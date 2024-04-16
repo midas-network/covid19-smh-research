@@ -316,6 +316,10 @@ The folder contains multiple sub-folders:
 
 - Metadata: We will require a brief meta-data from all teams.
 
+- Filename: the date YYYY-MM-DD should correspond to the **due date**. 
+	For phase 1: the date will be "2024-05-15". For more information,
+	please consult the [model-output/README](./model-output/README.md)
+
 
 ## Target Data
 
