@@ -75,7 +75,7 @@
               "target_name": "Incident cases",
               "target_units": "count",
               "target_keys": {
-                "target": "inc hosp"
+                "target": "inc case"
               },
               "description": "Weekly newly reported COVID-19 cases",
               "target_type": "discrete",
@@ -154,7 +154,7 @@
               "target_name": "Incident cases",
               "target_units": "count",
               "target_keys": {
-                "target": "inc hosp"
+                "target": "inc case"
               },
               "description": "Weekly newly reported COVID-19 cases",
               "target_type": "discrete",
@@ -232,7 +232,7 @@
               "target_name": "Incident cases",
               "target_units": "count",
               "target_keys": {
-                "target": "inc hosp"
+                "target": "inc case"
               },
               "description": "Weekly newly reported COVID-19 cases",
               "target_type": "discrete",
@@ -310,7 +310,7 @@
               "target_name": "Incident cases",
               "target_units": "count",
               "target_keys": {
-                "target": "inc hosp"
+                "target": "inc case"
               },
               "description": "Weekly newly reported COVID-19 cases",
               "target_type": "discrete",
