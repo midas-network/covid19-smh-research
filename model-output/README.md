@@ -330,10 +330,10 @@ Teams should provide the following 23 quantiles:
 
 For example:
 
-|origin_date|scenario_id|location|target|horizon|age_group|output_type|output_type_id|run_grouping|stochastic_run|value|
+|origin_date|scenario_id|location|target|horizon|race_ethnicity|output_type|output_type_id|run_grouping|stochastic_run|value|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|2023-11-12|A-2023-10-27|US|inc hosp|1|0-0.99|quantile|0.010|NA|NA||
-|2023-11-12|A-2023-10-27|US|inc hosp|1|0-0.99|quantile|0.025|NA|NA||
+|2020-10-15|A-2020-05-01|37|inc case|1|asian|quantile|0.010|NA|NA||
+|2020-10-15|A-2020-05-01|37|inc case|1|asian|quantile|0.025|NA|NA||
 ||||||||||||
 
 

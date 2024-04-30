@@ -1,0 +1,25 @@
+# Packages required for the validation (update requirements (cache) on the 2024-04-24)
+https://github.com/midas-network/SMHvalidation/archive/refs/heads/main.zip # v0.1.0
+https://github.com/Infectious-Disease-Modeling-Hubs/hubUtils/archive/refs/heads/main.zip"
+arrow
+covidcast
+cowplot
+data.table
+dplyr
+ggplot2
+ggpubr
+gh
+glue
+grDevices
+grid
+gridExtra
+gtable
+lubridate
+purrr
+readr
+remotes
+scales
+stringr
+tibble
+tidyr
+tidyselect
