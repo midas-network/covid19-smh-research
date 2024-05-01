@@ -197,7 +197,7 @@
                 "optional": [0, 1]
               },
               "value" : {
-                "type": "numeric",
+                "type": "double",
                 "minimum": 0
               }
             }
@@ -275,7 +275,7 @@
                 "optional": [0, 1]
               },
               "value" : {
-                "type": "numeric",
+                "type": "double",
                 "minimum": 0
               }
             }
