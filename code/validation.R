@@ -92,10 +92,8 @@ if (isFALSE(all(check))) {
       # run validation
       if (sub_file_date > "2024-01-01") {
         merge_col <- TRUE
-        n_decimal <- 1
       } else {
         merge_col <- FALSE
-        n_decimal <- NULL
       }
       if (is.null(partition)) {
         val_path <- basename(pr_sub_files_group)
@@ -106,8 +104,7 @@ if (isFALSE(all(check))) {
       }
       arg_list <- list(path = val_path, js_def = js_def_file, lst_gs = lst_gs,
                        pop_path = pop_path, merge_sample_col = merge_col,
-                       partition = partition, round_id = round_id,
-                       n_decimal = n_decimal)
+                       partition = partition, round_id = round_id)
       test <- capture.output(try(do.call(SMHvalidation::validate_submission,
                                          arg_list)))
       gc()
