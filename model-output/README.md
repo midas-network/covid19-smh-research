@@ -362,10 +362,10 @@ To ensure proper data formatting, pull requests for new data or updates in
 model-output/ will be automatically validated
 
 When a pull request is submitted, the data are validated by running the
-scripts in [validation.R](../code/validation/validation.R). The intent for
+scripts in [validation.R](../code/validation.R). The intent for
 these tests are to validate the requirements above and all checks are 
 specifically enumerated 
-[on the Validation wiki page]([https://github.com/midas-network/frsv-scenario-modeling-hub/wiki/Validation](https://github.com/midas-network/rsv-scenario-modeling-hub/wiki/Validation)).
+[on the Validation documentation webpage](https://scenariomodelinghub.org/documentation/validation.html).
 
 Please [let us know](https://github.com/midas-network/rsv-scenario-modeling-hub/issues) if
 the wiki is inaccurate or if any questions.
