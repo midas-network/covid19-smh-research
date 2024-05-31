@@ -150,6 +150,6 @@ Cases and vaccination data are mapped in the following format:
 |North Carolina|White|white|
 |North Carolina|Black or African American|black|
 |North Carolina|American Indian or Alaskan Native|other|
-|North Carolina|Asian or other Pacific Islander|other|
+|North Carolina|Asian or other Pacific Islander|asian|
 |North Carolina|Additional Groups|other|
 
