@@ -237,7 +237,7 @@ documentation associated with the
 In this round, the required target for trajectories will be **weekly incident
 infections, cases, and deaths in California and North Carolina for a set of
 specified racial/ethnic groups.** Trajectories will need to be paired across
-racial/ethnic groups ann horizaom (i.e., for a given model, location, scenario 
+racial/ethnic groups and horizon (i.e., for a given model, location, scenario 
 and horizon, all race/ethnicity data for simulation 1 corresponds to the sum of
 race/ethnicity-specific estimates for simulation 1). 
 
@@ -290,7 +290,8 @@ The folder contains multiple sub-folders:
 - Start date for scenarios: Sunday November 15, 2020 (first date of simulated 
  transmission/outcomes)
 - Simulation end date: April 3, 2021 (20-week horizon)
-- **Phase 1 projections due: Mid-May 2024 (soft deadline)**
+- Mid-May 2024 (soft deadline)
+- **Phase 1 projections due: 2024-06-18**
 
 ##### Submission requirements
 

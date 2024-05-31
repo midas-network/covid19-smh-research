@@ -19,10 +19,10 @@ consultation with academic modeling teams and government agencies (e.g., CDC).
 ### Disparities Round Phase 1: Can we accurately predict COVID-19 death disparities by race/ethnicity?
 
 In Phase 1, teams will calibrate to case and death data by race/ethnicity from
-5/1/2020 – 11/14/2020 and project forward 11/15/2020 – 4/3/2021 in a single
+5/1/2020 – 11/14/2020 and project forward to 11/15/2020 – 4/3/2021 in a single
 Scenario A. Teams are required to incorporate health inequities that contribute
 to differential transmission risk and severity by race/ethnicity, where
-severity is defined at the probability of death given infection. Teams will be
+severity is defined as the probability of death given infection. Teams will be
 evaluated on their ability to model race/ethnicity-specific death time series
 throughout the projection period in Phase 1. We will assume that we have
 prescribed the perfect scenario conditions; thus full information about new
@@ -163,23 +163,24 @@ documentation associated with the
 In this round, the required target for trajectories will be **weekly incident
 infections, cases, and deaths in California and North Carolina for a set of
 specified racial/ethnic groups.** Trajectories will need to be paired across
-racial/ethnic groups (i.e., for a given model, location, scenario and horizon,
-all race/ethnicity data for simulation 1 corresponds to the sum of
+racial/ethnic groups and horizon (i.e., for a given model, location, scenario 
+and horizon, all race/ethnicity data for simulation 1 corresponds to the sum of
 race/ethnicity-specific estimates for simulation 1). 
 
 In California, required racial/ethnic groups are `"latino"`, `"black"`, 
-`"white"`, `"asian"`, and `"other"`, where `"other"` represents American Indian 
-Alaska Native and Native Hawaiian and Pacific Islander. 
+`"white"`, `"asian"`, `"other"`, and `"overall"`. 
 
 In North Carolina, required racial/ethnic groups are `"white"`, `"black"`, `"asian"`,
-and `"other"`, where `"other"` represents non-White Hispanic and American Indian 
-Alaska Native. 
+`"other"`, and `"overall"`.
 
-Given the missingness in demographic disease data and limited data available on 
-case reporting rates by race/ethnicity, infections and cases will not be evaluated. 
+The definitions of race/ethnicity can differ across various datasets.
 
-Teams will be submitting cases and infections for the purpose of model comparison and 
-weekly death targets will be evaluated. 
+Given the missingness in demographic disease data and limited data available on case 
+reporting rates by race/ethnicity, it will be optional for teams to submit cases. 
+Infections and deaths will be required and only weekly death targets will be evaluated. 
+
+For more information please consult the [target data README](./target-data/README.md).
+
 
 ### Additional Information
 
@@ -198,7 +199,7 @@ The folder contains multiple sub-folders:
 - Population Data: state-level population structure data by age and race/ethnicity
 - Hospitalization: hospitalization time series by race/ethnicity, in a rate per 100,000 
   people for California and number of hospitalizations for North Carolina
-- Contact Matrix: synthetic daily contact matrices by race/ethnicity in the household, 
+- Contacts: synthetic daily contact matrices by race/ethnicity in the household, 
   school, community, workplace setting in the pre-pandemic and pandemic period
 
 ### Submission Information
@@ -211,7 +212,8 @@ The folder contains multiple sub-folders:
 - Start date for scenarios: Sunday November 15, 2020 (first date of simulated 
  transmission/outcomes)
 - Simulation end date: April 3, 2021 (20-week horizon)
-- **Phase 1 projections due: March 26, 2024**
+- Mid-May 2024 (soft deadline)
+- **Phase 1 projections due: 2024-06-18**
 
 ##### Submission requirements
 
@@ -219,14 +221,24 @@ The folder contains multiple sub-folders:
   Saturday, April 3, 2021 (20 week projection period). Weeks follow epi-weeks 
   (Sun-Sat) dated by the last day of the week. 
 
-- Weekly targets: Weekly incident infections, cases, and deaths by location 
+- Weekly targets: Weekly incident infections, deaths by location 
   and major racial/ethnic group. We require the following racial/ethnic groups 
   by state:
-  	- California: `"latino"`, `"black"`, `"white"`, `"asian"`, and `"other"`. 
-  	- North Carolina: `"black"`, `"white"`, `"asian"`, and `"other"`.
+  	- California: `"latino"`, `"black"`, `"white"`, `"asian"`, `"other"`, and `"overall"`. 
+  	- North Carolina: `"black"`, `"white"`, `"asian"`, `"other"`, and `"overall"`.
 
-- 100-300 individual trajectories for each target. Trajectories should be sampled 
-  in such a way that they will be most likely to produce the uncertainty of the 
-  simulated process. 
+- Optional target: weekly incident cases by location and major
+  racial/ethnic group (as previously stated)
+
+- We required 100-300 individual trajectories for each target. Trajectories 
+  should be sampled in such a way that they will be most likely to produce 
+  the uncertainty of the simulated process. Projection quantiles are optional.
+  	- For teams who wish to submit quantiles, the format is in accordance with 
+  	prior SMh rounds. We ask for the following quantiles: 
+  	0.01, 0.025, 0.05, every 5% to 0.95, 0.975, and 0.99
 
 - Metadata: We will require a brief meta-data from all teams.
+
+- Filename: the date YYYY-MM-DD should correspond to the **due date**. 
+	For phase 1: the date will be "2024-05-15". For more information,
+	please consult the [model-output/README](./model-output/README.md)
