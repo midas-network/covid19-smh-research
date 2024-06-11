@@ -33,7 +33,7 @@ the ability of models to project disparities over time, after controlling for
 other epidemiological and behavioral uncertainties. Phase 1 features a single
 scenario as follows: 
 
-<img src= "https://github.com/midas-network/covid19-smh-research/blob/main/rounds/round1_viz/disparities_phase1.png">
+<img src= "https://github.com/midas-network/covid19-smh-research/blob/main/rounds/round1_viz/disparities_phase1.png?raw=true">
 
 
 ### Assumptions
@@ -149,6 +149,23 @@ November 2020-April 2021.
 	[Cybersecurity and Infrastructure Security Agency](https://www.cisa.gov/sites/default/files/publications/ECIW_4.0_Guidance_on_Essential_Critical_Infrastructure_Workers_Final3_508_0.pdf). 
 
 
+- VE assumptions: Three vaccines were authorized in the United States: (1) BNT162b2 mRNA
+  from Pfizer/BioNTech; (2) mRNA-1273 from Moderna; and (3) Ad26.COV2.S from Janssen.
+  The efficacy of vaccines against symptomatic infection was 95%, 94%, and 66% for the BNT162b2,
+  mRNA-1273, and Ad26.COV2.S vaccines respectively against the Wuhan and B.1.1.7 strains,
+  with even greater efficacy against hospitalization and death (
+  [Lindsey R. Baden et al. 2020](https://www.nejm.org/doi/full/10.1056/nejmoa2035389),
+  [Fernando P. Polack et al. 2020](https://www.nejm.org/doi/full/10.1056/nejmoa2034577),
+  [Jerald Sadoff et al. 2021](https://pubmed.ncbi.nlm.nih.gov/33882225/),
+  [Sara E. Oliver et al. 2020](https://www.cdc.gov/mmwr/volumes/69/wr/mm6950e2.htm?fbclid=IwAR1-k3Zmjw3E-wcewxeX03yqdbrj3BROSJuaNhLS5fm_zfIfLlJMcH6Hcaw)). Ad26.COV2.S
+  from Janssen was not administered in the US until Feb 27, 2021, so it can be assumed it had
+  minimal impact during this study period ([Janssen COVID-19 Vaccine FDA Approval Status](https://www.drugs.com/history/janssen-covid-19-vaccine.html#:~:text=On%20February%2027%2C%202021%2C%20the,years%20of%20age%20and%20older.)).
+
+- Teams are free to ignore the impact of waning given that most individuals would be vaccinated
+  within 4 months of the projection end date. We can assume that VE is 95% after two doses, 50%
+  after one dose, and that doses typically occur 3.5 weeks apart. Teams would maintain these VE
+  estimates for the duration of the study period.
+
 ### Calibration Data
 
 
@@ -213,7 +230,7 @@ The folder contains multiple sub-folders:
  transmission/outcomes)
 - Simulation end date: April 3, 2021 (20-week horizon)
 - Mid-May 2024 (soft deadline)
-- **Phase 1 projections due: 2024-06-18**
+- **Phase 1 projections due: 2024-06-25**
 
 ##### Submission requirements
 

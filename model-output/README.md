@@ -93,8 +93,8 @@ arrow::read_parquet(filename)
 ```
 
 For the disparities round, the date YYYY-MM-DD should correspond to the 
-**due date**, for example: "`2024-06-18`" from 
-"Phase 1 projections due: 2024-06-18" as noted in the scenario 
+**due date**, for example: "`2024-06-25`" from 
+"Phase 1 projections due: 2024-06-25" as noted in the scenario 
 description on the main 
 [README, Submission Information](https://github.com/midas-network/rsv-scenario-modeling-hub)).
 

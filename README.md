@@ -308,7 +308,7 @@ The folder contains multiple sub-folders:
  transmission/outcomes)
 - Simulation end date: April 3, 2021 (20-week horizon)
 - Mid-May 2024 (soft deadline)
-- **Phase 1 projections due: 2024-06-18**
+- **Phase 1 projections due: 2024-06-25**
 
 ##### Submission requirements
 
