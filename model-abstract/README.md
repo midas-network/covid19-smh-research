@@ -64,7 +64,7 @@ All markdown associated format is accepted, except the addition of other
 sections (or headings).
 
 For more information on the markdown format, please consult the 
-(GitHub - Basic writing and formatting syntax help page)[https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax]
+[GitHub - Basic writing and formatting syntax help page](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
 ### Examples
 
