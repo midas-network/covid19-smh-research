@@ -40,7 +40,8 @@ submitted at the same time to the [model-metadata/](./model-metadata/) folder
 of this GitHub repository. 
 Technical instructions for submission and required file formats can be found 
 [here](./model-output/README.md), 
-[here, for the metadata file](./model_metadata/README.md).
+[here, for the metadata file](./model_metadata/README.md), and
+[here, for the abstract file](./model-abtract/README.md)
 
 ## Disparities Round
 

@@ -96,7 +96,7 @@ For the disparities round, the date YYYY-MM-DD should correspond to the
 **due date**, for example: "`2024-06-25`" from 
 "Phase 1 projections due: 2024-06-25" as noted in the scenario 
 description on the main 
-[README, Submission Information](https://github.com/midas-network/rsv-scenario-modeling-hub)).
+[README, Submission Information](https://github.com/midas-network/covid19-smh-research)).
 
 The `team` and `model` in this file must match the `team` and `model` in the 
 directory this file is in. Both `team` and `model` should be less than 15 
