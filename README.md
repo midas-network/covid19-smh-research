@@ -41,7 +41,7 @@ of this GitHub repository.
 Technical instructions for submission and required file formats can be found 
 [here](./model-output/README.md), 
 [here, for the metadata file](./model_metadata/README.md), and
-[here, for the abstract file](./model-abtract/README.md)
+[here, for the abstract file](./model-abstract/README.md)
 
 ## Disparities Round
 
