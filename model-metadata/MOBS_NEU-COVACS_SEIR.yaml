@@ -1,0 +1,39 @@
+team_name: "MOBS Lab at Northeastern University"
+team_abbr: "MOBS_NEU"
+model_name: "Compartmental SEIR Model with Vaccination and Contact Structure"
+model_abbr: "COVACS_SEIR"
+model_contributors: [
+  {
+    "name": "Nicolò Gozzi",
+    "affiliation": "ISI Foundation",
+    "email": "nicolo.gozzi@isi.it"
+  },
+  {
+    "name": "Jessica T. Davis",
+    "affiliation": "Network Science Institute, Northeastern University",
+    "email": "jes.davis@northeastern.edu"
+  },
+  {
+    "name": "Matteo Chinazzi",
+    "affiliation": "Network Science Institute, Northeastern University, Boston, MA, USA; The Roux Institute, Northeastern University, Portland, ME, USA",
+    "email": "m.chinazzi@northeastern.edu"
+  },
+ {
+    "name": "Nicola Perra",
+    "affiliation": "Queen Mary University of London",
+    "email": "nicolaperra@gmail.com"
+  },
+  {
+    "name": "Alessandro Vespignani",
+    "affiliation": "Network Science Institute, Northeastern University",
+    "email": "alexves@gmail.com"
+  },
+]
+license: "CC-BY_SA-4.0"
+methods: "SEIR-like epidemic model with vaccination, variants of concern, and explicit race/etnicity demographic and contact structure."
+methods_long: "The model is a compartmental SEIR-like model with the addition of compartments for vaccination and deaths. The model also accounts for the modulating effect of NPIs on transmission considering mobility data, and the emergence of more transmissible variants of concern. The model considers an explicit demographic representation and contact structure of different race/etnicities. The model is calibrated to the observed deaths using an Approximate Bayesian Computation approach."
+model_version: "1.0"
+website_url: "https://www.mobs-lab.org/"
+team_funding: "MC, JD and AV are supported by CDC-RFA-FT-23-0069."
+data_inputs: "Demographic, vaccination, and epidemiological data from this repository. Mobility data from COVID-19 Community Mobility Report by Google LLC."
+citation: "Gozzi, N., Chinazzi, M., Dean, N.E. et al. Estimating the impact of COVID-19 vaccine inequities: a modeling study. Nat Commun 14, 3272 (2023). https://doi.org/10.1038/s41467-023-39098-w"
