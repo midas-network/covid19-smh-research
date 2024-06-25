@@ -26,7 +26,7 @@ To model the modulating effect of NPIs on transmission we used mobility data fro
 No.
 
 ## How was the introduction of more transmissible variants modelled?
-We fitted a logistic function to the growth of the Alpha variant in terms of its percentage of detections in both California and North Carolina. We then modulated the transmission rate by incorporating the fitted Alpha prevalence. Starting from \(\beta_0\) (the initial transmission rate at the start of the simulation), we increased it up to \(\psi \times \beta_0\), where \(\psi\) represents the increased transmissibility of the Alpha variant, which we set to 1.5 (i.e., 50% higher transmissibility compared to the wild type).
+We fitted a logistic function to the growth of the Alpha variant in terms of its percentage of detections in both California and North Carolina. We then modulated the transmission rate by incorporating the fitted Alpha prevalence. Starting from $\(\beta_0\)$ (the initial transmission rate at the start of the simulation), we increased it up to $\(\psi \times \beta_0\)$, where $\(\psi\)$ represents the increased transmissibility of the Alpha variant, which we set to 1.5 (i.e., 50% higher transmissibility compared to the wild type).
 
 ## How were NPIs implemented? 
 We use data from the COVID-19 Community Mobility Report published by Google, which describes the percentage change in visits to specific points of interest. We translated the reduction in visits into a contact reduction factor, which was then used to adjust the transmission rate throughout the simulation.
