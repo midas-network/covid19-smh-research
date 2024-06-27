@@ -237,6 +237,22 @@ inclusive).
 Projections of infections will be used to compare outputs between 
 models but will not be evaluated against observations. 
 
+### `horizon`
+
+Values in the `horizon` column must be an integer (N) between 1 and last week 
+horizon value representing the associated target value during the N weeks
+after `origin_date`. 
+
+For example, between 1 and 20 for Round 1 - Phase I ("Simulation end date:
+April 3, 2021 (20-week horizon)") and in the following example table,
+the first row represent the number of incident death in California, for the 1st 
+epiweek (epiweek ending on 2020-11-21) starting 2020-11-15.
+
+|origin_date|scenario_id|location|target|horizon|race_ethnicity|output_type|output_type_id|run_grouping|stochastic_run|value|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|2020-11-15|A-2020-05-01|06|inc case|1|asian|sample|NA|1|1||
+||||||||||||
+
 
 ### `location`
 
@@ -298,12 +314,12 @@ For example:
 
 |origin_date|scenario_id|location|target|horizon|race_ethnicity|output_type|output_type_id|run_grouping|stochastic_run|value|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|2020-10-15|A-2020-05-01|06|inc case|1|asian|sample|NA|1|1||
-|2020-10-15|A-2020-05-01|06|inc case|2|asian|sample|NA|1|1||
-|2020-10-15|A-2020-05-01|06|inc case|3|asian|sample|NA|1|1||
+|2020-11-15|A-2020-05-01|06|inc case|1|asian|sample|NA|1|1||
+|2020-11-15|A-2020-05-01|06|inc case|2|asian|sample|NA|1|1||
+|2020-11-15|A-2020-05-01|06|inc case|3|asian|sample|NA|1|1||
 ||||||||||||
-|2020-10-15|A-2020-05-01|06|inc case|1|asian|sample|NA|2|1||
-|2020-10-15|A-2020-05-01|06|inc case|2|asian|sample|NA|2|1||
+|2020-11-15|A-2020-05-01|06|inc case|1|asian|sample|NA|2|1||
+|2020-11-15|A-2020-05-01|06|inc case|2|asian|sample|NA|2|1||
 ||||||||||||
 
 
@@ -332,8 +348,8 @@ For example:
 
 |origin_date|scenario_id|location|target|horizon|race_ethnicity|output_type|output_type_id|run_grouping|stochastic_run|value|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|2020-10-15|A-2020-05-01|37|inc case|1|asian|quantile|0.010|NA|NA||
-|2020-10-15|A-2020-05-01|37|inc case|1|asian|quantile|0.025|NA|NA||
+|2020-11-15|A-2020-05-01|37|inc case|1|asian|quantile|0.010|NA|NA||
+|2020-11-15|A-2020-05-01|37|inc case|1|asian|quantile|0.025|NA|NA||
 ||||||||||||
 
 
