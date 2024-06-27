@@ -221,9 +221,9 @@ The folder contains multiple sub-folders:
 
 ### Submission Information
 
-| Phase | Type | Scenario | Scenario name | Scenario ID for submission file (`scenario_id`) |
-|:--------:|:--------:| ---------------------------------------------- |:-----------------:|:--------------------:|
-|1| Projection  | Scenario A. Inequity-driven transmission and severity by race/ethnicity                        | phase_one      | A-2020-05-01 |
+| Scenario | Scenario name | Scenario ID for submission file (`scenario_id`) |
+| ---------------------------------------------- |:-----------------:|:--------------------:|
+| Scenario A. Inequity-driven transmission and severity by race/ethnicity  | phase_one  | A-2020-05-01 |
 
 - End date for fitting data for Phase 1: Saturday November 14, 2020
 - Start date for scenarios: Sunday November 15, 2020 (first date of simulated 
