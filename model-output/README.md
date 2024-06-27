@@ -250,7 +250,7 @@ epiweek (epiweek ending on 2020-11-21) starting 2020-11-15.
 
 |origin_date|scenario_id|location|target|horizon|race_ethnicity|output_type|output_type_id|run_grouping|stochastic_run|value|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|2020-11-15|A-2020-05-01|06|inc case|1|asian|sample|NA|1|1||
+|2020-11-15|A-2020-05-01|06|inc death|1|asian|sample|NA|1|1||
 ||||||||||||
 
 
