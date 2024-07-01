@@ -21,6 +21,5 @@ model_contributors: [
 ]
 license: "cc-by-4.0"
 methods: "This model is an adapted version of the ODE system published in Larsen et al. (Science Advances, 2023), replacing socioeconomic stratification with race/ethnicity structure and an explicitly NPI-compliant class."
-methods_long: "Long description of the model"
 model_version: "1.0"
 citation: "Larsen, S, Shin I, Joseph J, West H, Anorga R, Mena G, Mahmud A, Martinez P. Quantifying the impact of SARS-CoV-2 temporal vaccination trends and disparities on disease control. Science Advances. 2023 Aug. doi: 10.1126/sciadv.adh9920."
