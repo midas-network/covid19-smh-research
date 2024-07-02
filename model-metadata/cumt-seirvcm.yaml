@@ -1,0 +1,24 @@
+team_name: "Columbia University Modelling Team"
+team_abbr: "cumt"
+model_name: "Model SEIVR Contact Matrix"
+model_abbr: "seivrcm"
+model_contributors: [
+  {
+    "name": "Yao Q",
+    "affiliation": "Mailman School of Public Health, Columbia University",
+    "email": "qy2290@columbia.edu"
+  },
+  {
+   "name": "Pei S",
+    "affiliation": "Mailman School of Public Health, Columbia University",
+    "email": "sp3449@columbia.edu"
+  },
+]
+license: "cc-by-4.0"
+methods: "Run the SEIVR model on the contact matrices among different races/ethnicities."
+methods_long: "We ran a Susceptible-Exposed-Infected-Vaccinated-Recovered (SEIRV) model, coupled with contact matrices among different races/ethnicities. In the calibration phase, we used serology data and the number of deaths to construct infection-to-fatality rates (IFR) for different races/ethnicities. We employed a Markov Chain Monte Carlo simulation to fit the beta values and the seeds for different races/ethnicities monthly. In the projection phase, we used the final beta and IFR in the calibration, combined with a seasonal cycle and a linear function of NPIs, to project the number of deaths."
+model_version: "1.0"
+website_url: "cc-by-4.0"
+team_funding: "Council of State and Territorial Epidemiologists NU38OT00297 and National Science Foundation DMS-2229605"
+data_inputs: "The contact matrices are the contact matrices after the pandemic."
+
