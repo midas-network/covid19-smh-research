@@ -33,7 +33,7 @@ the ability of models to project disparities over time, after controlling for
 other epidemiological and behavioral uncertainties. Phase 1 features a single
 scenario as follows: 
 
-<img src= "https://github.com/midas-network/covid19-smh-research/blob/main/rounds/round1_viz/disparities_phase1.png?raw=true">
+<img src= "https://raw.githubusercontent.com/midas-network/covid19-smh-research/main/rounds/round1_viz/disparities_phase1.png">
 
 
 ### Assumptions
@@ -170,7 +170,7 @@ November 2020-April 2021.
 
 
 Weekly case and death data by race/ethnicity are available for phase 1 and 2 in the
-[target-data](./target-data/) folder. For more information, please consult the
+[target-data](https://github.com/midas-network/covid19-smh-research/tree/main/target-data) folder. For more information, please consult the
 documentation associated with the 
 [disparities round target data](https://github.com/midas-network/covid19-smh-research/blob/main/target-data/README.md#disparities-round).
 
@@ -196,7 +196,7 @@ Given the missingness in demographic disease data and limited data available on 
 reporting rates by race/ethnicity, it will be optional for teams to submit cases. 
 Infections and deaths will be required and only weekly death targets will be evaluated. 
 
-For more information please consult the [target data README](./target-data/README.md).
+For more information please consult the [target data README](https://github.com/midas-network/covid19-smh-research/tree/main/target-data/README.md).
 
 
 ### Additional Information
@@ -258,4 +258,4 @@ The folder contains multiple sub-folders:
 
 - Filename: the date YYYY-MM-DD should correspond to the **due date**. 
 	For phase 1: the date will be "2024-05-15". For more information,
-	please consult the [model-output/README](./model-output/README.md)
+	please consult the [model-output/README](https://github.com/midas-network/covid19-smh-research/tree/main/model-output/README.md)
