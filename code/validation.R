@@ -90,7 +90,7 @@ if (isFALSE(all(check))) {
       })
       gc()
       # run validation
-      if (sub_file_date > "2024-01-01") {
+      if (all(sub_file_date > "2024-01-01")) {
         merge_col <- TRUE
       } else {
         merge_col <- FALSE

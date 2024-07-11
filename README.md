@@ -310,6 +310,7 @@ The folder contains multiple sub-folders:
 - Simulation end date: April 3, 2021 (20-week horizon)
 - Mid-May 2024 (soft deadline)
 - **Phase 1 projections due: 2024-06-25**
+- **Phase 2 projections due: 2024-07-16**
 
 ##### Submission requirements
 
