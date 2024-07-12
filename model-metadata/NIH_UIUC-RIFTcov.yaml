@@ -21,6 +21,6 @@ model_contributors: [
 ]
 license: "cc-by-4.0"
 methods: "This model is an adapted version of the ODE system published in Larsen et al. (Science Advances, 2023), replacing socioeconomic stratification with race/ethnicity structure and an explicitly NPI-compliant class."
-methods_long: "This compartmental SEIR model tracks individuals through two levels of immunity (fully naive, previously infected/vaccinated). Daily contacts, case reporting rate, npi compliance, vaccination, and infection fatality rate are all stratified by race/ethnicity. The model is calibrated to cases and deaths using maximum likelihood estimation."
+methods_long: "This compartmental SEIR model tracks individuals through two levels of immunity (fully naive, previously infected/vaccinated). Daily contacts, case reporting rate, npi compliance, vaccination, and infection fatality rate are all stratified by race/ethnicity. The model is calibrated to cases and deaths using maximum likelihood estimation. During the projection period, uncertainty is incorporated through Latin hypercube sampling on profiled parameters (NPI compliance/duration, reporting rate and IFR) and on a range of possible changes in NPI compliance in the projection period relative to the calibration period."
 model_version: "1.0"
 citation: "Larsen, S, Shin I, Joseph J, West H, Anorga R, Mena G, Mahmud A, Martinez P. Quantifying the impact of SARS-CoV-2 temporal vaccination trends and disparities on disease control. Science Advances. 2023 Aug. doi: 10.1126/sciadv.adh9920."
