@@ -1,7 +1,7 @@
 team_name: "University of Texas at Austin"
 team_abbr: "UTA"
-model_name: "UTA-ImmunoSEIRS"
 model_abbr: "ImmunoSEIRS"
+model_name: "UTA-ImmunoSEIRS"
 model_contributors: [
 
   {
