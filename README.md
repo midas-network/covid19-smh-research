@@ -107,7 +107,13 @@ debias healthcare settings to address institutional racism, and expand
 institutional/government support systems such as paid leave. **In Scenario D,
 we assume that all racial/ethnic populations experience non-household
 transmission risk and age-adjusted severity in line with the White
-population.** See the round structure below. 
+population. In Scenarios B-D, disparities in transmission and severity 
+should be mitigated on November 15, so as the initial conditions in 
+Scenarios A-D are the same for a given simulation. If a model estimates 
+that any racial/ethnic group experiences a lower transmission rate or 
+age-adjusted severity than the White population, the values estimated 
+for this racial/ethnic group should be retained and not indexed on the
+White population.** See the round structure below.
 
 <img src= "./rounds/round1_viz/disparities_phase2.png">
 
