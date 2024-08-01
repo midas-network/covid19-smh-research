@@ -307,7 +307,7 @@ The folder contains multiple sub-folders:
 |1| Projection  | Scenario A. Inequity-driven transmission and severity by race/ethnicity                        | phase_one      | A-2020-05-01 |
 |2| Calibration | Scenario A. Inequity-driven transmission and severity by race/ethnicity                        | inTran_inSev   | A-2020-11-15 |
 |2| Projection  | Scenario B. Inequity-mitigated transmission and inequity-driven severity by race/ethnicity     | mitTran_inSev  | B-2020-11-15 |
-|2| Projection  | Scenario C. Inequity-driven transmission and inequity-mitigated severity and by race/ethnicity | inTran_mitSev  | C-2020-11-15 | 
+|2| Projection  | Scenario C. Inequity-driven transmission and inequity-mitigated severity by race/ethnicity     | inTran_mitSev  | C-2020-11-15 | 
 |2| Projection  | Scenario D.  Inequity-mitigated transmission and inequity-mitigated severity by race/ethnicity | mitTran_mitSev | D-2020-11-15 |
 
 - End date for fitting data for Phase 1: Saturday November 14, 2020
