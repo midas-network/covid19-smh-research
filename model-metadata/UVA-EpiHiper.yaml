@@ -1,0 +1,49 @@
+team_name: "University of Virginia, Biocomplexity Institute"
+team_abbr: "UVA"
+model_name: "EpiHiper"
+model_abbr: "EpiHiper"
+model_contributors: [
+  {
+    "name": "Jiangzhuo Chen",
+    "affiliation": "University of Virginia",
+    "email": "chenj@virginia.edu"
+  },
+  {
+    "name": "Stefan Hoops",
+    "affiliation": "University of Virginia",
+    "email": "shoops@virginia.edu"
+  },
+  {
+    "name": "Srinivasan Venkatramanan",
+    "affiliation": "University of Virginia",
+    "email": "srini@virginia.edu"
+  },
+  {
+    "name": "Bryan Lewis",
+    "affiliation": "University of Virginia",
+    "email": "brylew@virginia.edu"
+  },
+  {
+    "name": "Parantapa Bhattacharya",
+    "affiliation": "University of Virginia",
+    "email": "parantapa@virginia.edu"
+  },
+  {
+    "name": "Dustin Machi",
+    "affiliation": "University of Virginia",
+    "email": "dm8qs@virginia.edu"
+  },
+  {
+    "name": "Madhav Marathe",
+    "affiliation": "University of Virginia",
+    "email": "marathe@virginia.edu"
+  }
+]
+license: "cc-by-4.0"
+methods: "An agent-based model simulates stochastic disease transmissions in a synthetic contact network, using a two-variant disease model stratified by both age and race/ethnicity."
+methods_long: "We upgraded our USA digital twin to integrate race/ethnicity in demographics, mobility, and contact network. Heterogeneous contacts within and between race/ethnicity groups are modeled at individual level. We calibrated race/ethnicity specific transmissibility and IFR parameters using serology, cases, and deaths data."
+model_version: "2024-06-25"
+website_url: "TBD"
+team_funding: "University of Virginia Strategic Investment Fund (Award Number SIF160), NSF CCF-1918656, OAC-1916805, IIS-1955797, VDH COVID-19 Modeling Program VDH-21-501-0135, DTRA subcontract/ARA S-D00189-15-TO-01-UVA, NIH 2R01GM109718-07, CDC MIND cooperative agreement U01CK000589, SMC fellowship 75D30121F00005-2005604290"
+data_inputs: "USA Digital Twin v2.4.0 created by UVA-BI, target and auxiliary data sets provided by SMH"
+citation: "J. Chen, P. Bhattacharya, S. Hoops, D. Machi, A. Adiga, H. Mortveit, S. Venkatramanan, B. Lewis, and M. Marathe. Role of heterogeneity: National scale data-driven agent-based modeling for the US COVID-19 Scenario Modeling Hub. Epidemics, Volume 48, 100779, 2024. https://doi.org/10.1016/j.epidem.2024.100779."
