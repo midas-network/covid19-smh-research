@@ -1,0 +1,38 @@
+team_name: "University of Texas at Austin"
+team_abbr: "UTA"
+model_abbr: "ImmunoSEIRS"
+model_name: "UTA-ImmunoSEIRS"
+model_contributors: [
+
+  {
+   "name": "Shraddha Ramdas Bandekar",
+    "affiliation": "The University of Texas at Austin",
+    "email": "shraddha.bandekar@austin.utexas.edu"
+  },
+  {
+    "name": "Kaiming Bi",
+    "affiliation": "The University of Texas at Austin",
+    "email": "kaiming.bi@austin.utexas.edu"
+  },
+
+  {
+    "name": "Anass Bouchnita",
+    "affiliation": "The University of Texas at El Paso",
+    "email": "abouchnita@utep.edu"
+  },
+  {
+    "name": "Spencer J. Fox",
+    "affiliation": "The University of Georgia",
+    "email": "sjfox@uga.edu"
+  },
+  {
+    "name": "Lauren Ancel Meyers",
+    "affiliation": "The University of Texas at Austin",
+    "email": "laurenmeyers@austin.utexas.edu"
+  }
+]
+license: "cc-by-4.0"
+methods: "We develop a compartmental model that is structured to race and age groups. It explicitly tracks the immunity caused by natural infections and vaccination and its impact on the average chances of infections and death."
+model_version: "1.0"
+website_url: "https://covid-19.tacc.utexas.edu/"
+
