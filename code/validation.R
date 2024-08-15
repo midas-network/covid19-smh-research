@@ -104,7 +104,8 @@ if (isFALSE(all(check))) {
       }
       arg_list <- list(path = val_path, js_def = js_def_file, lst_gs = lst_gs,
                        pop_path = pop_path, merge_sample_col = merge_col,
-                       partition = partition, round_id = round_id)
+                       partition = partition, round_id = round_id, 
+                       verbose = FALSE)
       test <- capture.output(try(do.call(SMHvalidation::validate_submission,
                                          arg_list)))
       gc()
