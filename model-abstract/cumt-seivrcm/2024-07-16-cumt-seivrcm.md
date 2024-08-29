@@ -20,7 +20,7 @@ In our SEIVRCM model, which uses smoothed daily IFR values based on daily death 
 
 ### Average percent reduction in severity relative to White (%)
 
-||White|Asian|Black|Hispanic|Latino|
+||White|Asian|Black|Other|Latino|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |CA| NA | 21.14 | 30.02 | 0 | 13.47 |
-|NC| NA | 0 | 18.82 | 0 | |
+|NC| NA | 0 | 18.82 | 0 | NA|
