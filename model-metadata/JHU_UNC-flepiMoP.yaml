@@ -1,0 +1,72 @@
+team_name: "Johns Hopkins University and University of North Carolina at Chapel Hill"
+team_abbr: "JHU_UNC"
+model_name: "Flexible Epidemic Modeling Pipeline"
+model_abbr: "flepiMoP"
+model_contributors: [
+  {
+    "name": "Shaun Truelove",
+    "affiliation": "Department of International Health, Johns Hopkins University",
+    "email": "shauntruelove@jhu.edu"
+  },
+  {
+    "name": "Alison Hill",
+    "affiliation": "Institute for Computational Medicine, Johns Hopkins University",
+    "email": "alhill@jhmi.edu"
+  },
+  {
+    "name": "Justin Lessler",
+    "affiliation": "Department of Epidemiology, Gillings School of Global Public Health, University of North Carolina at Chapel Hill",
+    "email": "jlessler@unc.edu"
+  },
+  {
+    "name": "Sara Loo",
+    "affiliation": "Department of International Health, Johns Hopkins University",
+    "email": "sloo2@jhu.edu"
+  },
+  {
+    "name": "Joseph Lemaitre",
+    "affiliation": "Department of Epidemiology, Gillings School of Global Public Health, University of North Carolina at Chapel Hill",
+    "email": "jo.lemaitresamra@gmail.com"
+  },
+  {
+   "name": "Anjalika Nande",
+    "affiliation": "Institute for Computational Medicine, Johns Hopkins University",
+    "email": "anande1@jhu.edu"
+  },
+  {
+    "name": "Sung-mok Jung",
+    "affiliation": "Department of Epidemiology, Gillings School of Global Public Health, University of North Carolina at Chapel Hill",
+     "email": "sungmok@ad.unc.edu"
+  },
+  {
+    "name": "Timothy Willard",
+    "affiliation": "Department of Epidemiology, Gillings School of Global Public Health, University of North Carolina at Chapel Hill"
+  },
+  {
+    "name": "Carl Pearson",
+    "affiliation": "Department of Epidemiology, Gillings School of Global Public Health, University of North Carolina at Chapel Hill"
+  },
+  {
+    "name": "Emily Przykucki",
+    "affiliation": "Department of Epidemiology, Gillings School of Global Public Health, University of North Carolina at Chapel Hill"
+  },
+  {
+    "name": "Clifton McKee",
+    "affiliation": "Department of Epidemiology, Johns Hopkins University",
+  },
+  {
+    "name": "Joshua Macdonald",
+    "affiliation": "Department of International Health, Johns Hopkins University"
+  },,
+  {
+    "name": "Tijs Alleman",
+    "affiliation": "Department of International Health, Johns Hopkins University"
+  }
+]
+license: "mit"
+methods: "Compartmental model of transmission and disease dynamics using flepiMoP framework"
+methods_long: "flepiMoP is a comprehensive open-source software pipeline for creating and simulating compartmental models of infectious disease transmission and inferring parameters through these models. We implement an SEIR model stratified by age, vaccination, variant, and race-ethnicity."
+website_url: "https://www.flepimop.org/"
+team_funding: "The development of this model was supported by from funds from NOA: 6 NU38FT000012-01."
+data_inputs: "Data provided from SMH"
+citation: "Lemaitre, JC., et al. flepiMoP: the evolution of a flexible infectious disease modeling pipeline during the COVID-19 pandemic. Epidemics (2024): 100753."
