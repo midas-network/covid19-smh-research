@@ -30,7 +30,7 @@ Whites have the largest infected population and the second-highest severity. Bla
 In general, the severities in North Carolina (NC) are lower than those in California (CA).
 
 ## How was the suppression of deaths handled in calibration? 
-For California (CA), the known suppressed value of 1932 divided by the sum of the minimum suppressed values equals around 6.80. Thus, we adjusted the number of deaths by adding six times the minimum suppressed value to the original value. In North Carolina (NC), the known suppressed value of 223 divided by the sum of the minimum suppressed values is around 1.36. Thus, we adjusted the number of deaths by adding one times the minimum suppressed value to the original value.
+For California (CA) and North Carolina (NC), we adjusted the number of deaths by adding one times the minimum suppressed value to the original value. 
 
 ## Details about calibration of race/ethnicity showing zero deaths throughout the calibration period (e.g., Others in CA and Asian in NC)? 
 Some of the zero points were adjusted by adding the suppressed values as previously described. We did not make additional adjustments for the zero deaths during the calibration period.
