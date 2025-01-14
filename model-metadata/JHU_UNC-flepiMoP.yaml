@@ -66,6 +66,7 @@ model_contributors: [
 license: "mit"
 methods: "Compartmental model of transmission and disease dynamics using flepiMoP framework"
 methods_long: "flepiMoP is a comprehensive open-source software pipeline for creating and simulating compartmental models of infectious disease transmission and inferring parameters through these models. We implement an SEIR model stratified by age, vaccination, variant, and race-ethnicity."
+model_version: "2025-01-01"
 website_url: "https://www.flepimop.org/"
 team_funding: "The development of this model was supported by from funds from NOA: 6 NU38FT000012-01."
 data_inputs: "Data provided from SMH"
