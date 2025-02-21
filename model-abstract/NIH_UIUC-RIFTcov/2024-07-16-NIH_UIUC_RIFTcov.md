@@ -19,7 +19,7 @@ In NC, Asian and Other groups had lower severity than the White population. In C
 ## What was the average age-adjusted reduction in severity in Scenario C for each racial/ethnic population, relative to the White population?
 ### Average percent reduction in severity relative to White (%)
 
-||White|Asian|Black|Hispanic|Latino|
+||White|Asian|Black|Other|Latino|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |CA| NA | 20.8 | 40.7 | 0.0 | 22.9 |
 |NC| NA | 0.0 | 30.8 | 0.0 | |
