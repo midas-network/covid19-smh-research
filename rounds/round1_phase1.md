@@ -2,13 +2,13 @@
 
 We observed disparities in COVID-19 outcomes by sociodemographic factors such as
 age, location, race/ethnicity, occupation, and socioeconomic status, yet most
-epidemiological models do not account for structural inequities that contribute
+epidemiological models do not account for structural heterogeneities that contribute
 to differential transmission and severity risk among these groups. This round
 aims to build multi-model capacity within the Scenario Modeling Hub to model
 and project how disease is distributed differentially among racial/ethnic
 subpopulations. A secondary goal is to retrospectively assess the COVID-19
 disease burden that could have been averted if various sources of health
-inequities were reduced or mitigated. The round will focus on two US states,
+heterogeneities were reduced or mitigated. The round will focus on two US states,
 California and North Carolina, where more detailed epidemiological data are
 available.
 
@@ -20,7 +20,7 @@ consultation with academic modeling teams and government agencies (e.g., CDC).
 
 In Phase 1, teams will calibrate to case and death data by race/ethnicity from
 5/1/2020 – 11/14/2020 and project forward to 11/15/2020 – 4/3/2021 in a single
-Scenario A. Teams are required to incorporate health inequities that contribute
+Scenario A. Teams are required to incorporate health heterogeneities that contribute
 to differential transmission risk and severity by race/ethnicity, where
 severity is defined as the probability of death given infection. Teams will be
 evaluated on their ability to model race/ethnicity-specific death time series
@@ -223,7 +223,7 @@ The folder contains multiple sub-folders:
 
 | Scenario | Scenario name | Scenario ID for submission file (`scenario_id`) |
 | ---------------------------------------------- |:-----------------:|:--------------------:|
-| Scenario A. Inequity-driven transmission and severity by race/ethnicity  | phase_one  | A-2020-05-01 |
+| Scenario A. Heterogeneity-driven transmission and severity by race/ethnicity  | phase_one  | A-2020-05-01 |
 
 - End date for fitting data for Phase 1: Saturday November 14, 2020
 - Start date for scenarios: Sunday November 15, 2020 (first date of simulated 

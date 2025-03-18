@@ -47,13 +47,13 @@ Technical instructions for submission and required file formats can be found
 
 We observed disparities in COVID-19 outcomes by sociodemographic factors such as
 age, location, race/ethnicity, occupation, and socioeconomic status, yet most
-epidemiological models do not account for structural inequities that contribute
+epidemiological models do not account for structural heterogeneities that contribute
 to differential transmission and severity risk among these groups. This round
 aims to build multi-model capacity within the Scenario Modeling Hub to model
 and project how disease is distributed differentially among racial/ethnic
 subpopulations. A secondary goal is to retrospectively assess the COVID-19
 disease burden that could have been averted if various sources of health
-inequities were reduced or mitigated. The round will focus on two US states,
+heterogeneities were reduced or mitigated. The round will focus on two US states,
 California and North Carolina, where more detailed epidemiological data are
 available.
 
@@ -65,7 +65,7 @@ consultation with academic modeling teams and government agencies (e.g., CDC).
 
 In Phase 1, teams will calibrate to case and death data by race/ethnicity from
 5/1/2020 – 11/14/2020 and project forward to 11/15/2020 – 4/3/2021 in a single
-Scenario A. Teams are required to incorporate health inequities that contribute
+Scenario A. Teams are required to incorporate health heterogeneities that contribute
 to differential transmission risk and severity by race/ethnicity, where
 severity is defined as the probability of death given infection. Teams will be
 evaluated on their ability to model race/ethnicity-specific death time series
@@ -82,13 +82,13 @@ scenario as follows:
 
 ### Disparities Round Phase 2: By how much could we have reduced disparities in COVID-19 deaths? 
 
-The goals of Phase 2 are to explore the potential impact of reducing inequities
+The goals of Phase 2 are to explore the potential impact of reducing heterogeneities
 in transmission risk, severity, or both during the same phase of the pandemic
 projected in Phase 1. In Phase 2, teams will be permitted to calibrate from
 5/1/2020 – 4/3/2021 to generate projections for Scenario A
 (representing empirically observed disparities). This will ensure that teams
 have captured disparities accurately throughout the entire time period so that
-the impact of reducing sources of inequities can be soundly assessed in
+the impact of reducing sources of heterogeneities can be soundly assessed in
 putative Scenarios B-D. 
 
 Thus Scenario A can be interpreted as a fitting exercise as opposed to
@@ -304,11 +304,11 @@ The folder contains multiple sub-folders:
 
 | Phase | Type | Scenario | Scenario name | Scenario ID for submission file (`scenario_id`) |
 |:--------:|:--------:| ---------------------------------------------- |:-----------------:|:--------------------:|
-|1| Projection  | Scenario A. Inequity-driven transmission and severity by race/ethnicity                        | phase_one      | A-2020-05-01 |
-|2| Calibration | Scenario A. Inequity-driven transmission and severity by race/ethnicity                        | inTran_inSev   | A-2020-11-15 |
-|2| Projection  | Scenario B. Inequity-mitigated transmission and inequity-driven severity by race/ethnicity     | mitTran_inSev  | B-2020-11-15 |
-|2| Projection  | Scenario C. Inequity-driven transmission and inequity-mitigated severity by race/ethnicity     | inTran_mitSev  | C-2020-11-15 | 
-|2| Projection  | Scenario D.  Inequity-mitigated transmission and inequity-mitigated severity by race/ethnicity | mitTran_mitSev | D-2020-11-15 |
+|1| Projection  | Scenario A. Heterogeneity-driven transmission and severity by race/ethnicity                             | phase_one     | A-2020-05-01 |
+|2| Calibration | Scenario A. Heterogeneity-driven transmission and severity by race/ethnicity                             | inHet_inSev   | A-2020-11-15 |
+|2| Projection  | Scenario B. Heterogeneity-mitigated transmission and Heterogeneity-driven severity by race/ethnicity     | mitHet_inSev  | B-2020-11-15 |
+|2| Projection  | Scenario C. Heterogeneity-driven transmission and Heterogeneity-mitigated severity by race/ethnicity     | inHet_mitSev  | C-2020-11-15 |
+|2| Projection  | Scenario D.  Heterogeneity-mitigated transmission and Heterogeneity-mitigated severity by race/ethnicity | mitHet_mitSev | D-2020-11-15 |
 
 - End date for fitting data for Phase 1: Saturday November 14, 2020
 - Start date for scenarios: Sunday November 15, 2020 (first date of simulated 
