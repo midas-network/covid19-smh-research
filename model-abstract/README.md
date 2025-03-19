@@ -52,7 +52,7 @@ where
 - `model` is the name of your model.
 
 The date YYYY-MM-DD should correspond to the round ID.
-For example for the round 1 - Phase I of the disparity round,
+For example for the round 1 - Phase I of the heterogeneity round,
 it corresponds to the round **due date**, "`2024-06-25`" from 
 "Phase 1 projections due: 2024-06-25" as noted in the scenario 
 description on the main 
