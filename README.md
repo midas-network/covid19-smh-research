@@ -11,9 +11,9 @@ collaborative modeling. GitHub release v2.0.0, 14 Jul 2023. URL: https://github.
 
 This repository is intended for the Scenario Modeling Hub's _research_ rounds, 
 which are intended to encourage modeling to address specific research questions. 
-Possibilities that have been discussed include the impact of disparities (described 
-below) revisiting early stages of a pandemic. Additional research rounds may 
-follow. 
+Possibilities that have been discussed include the impact of heterogeneities 
+(described below) revisiting early stages of a pandemic. Additional research 
+rounds may follow. 
 
 The research rounds are distinct from the _operational_ rounds were the sole 
 focus of the Scenario Modeling Hub from 
@@ -43,9 +43,9 @@ Technical instructions for submission and required file formats can be found
 [here, for the metadata file](./model_metadata/README.md), and
 [here, for the abstract file](./model-abstract/README.md)
 
-## Disparities Round
+## Heterogeneities Round
 
-We observed disparities in COVID-19 outcomes by sociodemographic factors such as
+We observed heterogeneities in COVID-19 outcomes by sociodemographic factors such as
 age, location, race/ethnicity, occupation, and socioeconomic status, yet most
 epidemiological models do not account for structural heterogeneities that contribute
 to differential transmission and severity risk among these groups. This round
@@ -61,7 +61,7 @@ We have specified a set of scenarios and target outcomes to allow alignment of
 model projections for collective insights. Scenarios have been designed in
 consultation with academic modeling teams and government agencies (e.g., CDC).
 
-### Disparities Round Phase 1: Can we accurately predict COVID-19 death disparities by race/ethnicity?
+### Heterogeneities Round Phase 1: Can we accurately predict COVID-19 death heterogeneities by race/ethnicity?
 
 In Phase 1, teams will calibrate to case and death data by race/ethnicity from
 5/1/2020 – 11/14/2020 and project forward to 11/15/2020 – 4/3/2021 in a single
@@ -74,20 +74,20 @@ prescribed the perfect scenario conditions; thus full information about new
 variant circulation, non-pharmaceutical interventions (NPIs) such as masking,
 social distancing, and travel restrictions, mobility, and vaccine coverage is
 known over the entire projection period. As a result, we will be able to test
-the ability of models to project disparities over time, after controlling for
+the ability of models to project heterogeneities over time, after controlling for
 other epidemiological and behavioral uncertainties. Phase 1 features a single
 scenario as follows: 
 
-<img src= "./rounds/round1_viz/disparities_phase1.png">
+<img src= "./rounds/round1_viz/heterogeneities_phase1.png">
 
-### Disparities Round Phase 2: By how much could we have reduced disparities in COVID-19 deaths? 
+### Heterogeneities Round Phase 2: By how much could we have reduced heterogeneities in COVID-19 deaths? 
 
 The goals of Phase 2 are to explore the potential impact of reducing heterogeneities
 in transmission risk, severity, or both during the same phase of the pandemic
 projected in Phase 1. In Phase 2, teams will be permitted to calibrate from
 5/1/2020 – 4/3/2021 to generate projections for Scenario A
-(representing empirically observed disparities). This will ensure that teams
-have captured disparities accurately throughout the entire time period so that
+(representing empirically observed heterogeneities). This will ensure that teams
+have captured heterogeneities accurately throughout the entire time period so that
 the impact of reducing sources of heterogeneities can be soundly assessed in
 putative Scenarios B-D. 
 
@@ -107,7 +107,7 @@ debias healthcare settings to address institutional racism, and expand
 institutional/government support systems such as paid leave. **In Scenario D,
 we assume that all racial/ethnic populations experience non-household
 transmission risk and age-adjusted severity in line with the White
-population. In Scenarios B-D, disparities in transmission and severity 
+population. In Scenarios B-D, heterogeneities in transmission and severity 
 should be mitigated on November 15, so as the initial conditions in 
 Scenarios A-D are the same for a given simulation. If a model estimates 
 that any racial/ethnic group experiences a lower transmission rate or 
@@ -115,7 +115,7 @@ age-adjusted severity than the White population, the values estimated
 for this racial/ethnic group should be retained and not indexed on the
 White population.** See the round structure below.
 
-<img src= "./rounds/round1_viz/disparities_phase2.png">
+<img src= "./rounds/round1_viz/heterogeneities_phase2.png">
 
 ### Assumptions
 
@@ -165,7 +165,7 @@ November 2020-April 2021.
 - Schools were largely closed for the 2020-21 school year in both locations. 
 
 - Weekly SageGraph mobility data is provided at the census tract level, in the 
-  [disparities/mobility/](https://github.com/midas-network/covid19-smh-research_resources/tree/main/disparities#mobility) 
+  [heterogeneities/mobility/](https://github.com/midas-network/covid19-smh-research_resources/tree/main/heterogeneities#mobility) 
   folder of 
   [covid19-smh-research_resources](https://github.com/midas-network/covid19-smh-research_resources)
   GitHub Repositories. 
@@ -177,7 +177,7 @@ November 2020-April 2021.
 
 - Weekly cumulative age- and race/ethnicity-specific vaccination coverage is 
   provided at the state level in the 
-  [disparities/vaccination/](https://github.com/midas-network/covid19-smh-research_resources/tree/main/disparities#vaccination) 
+  [heterogeneities/vaccination/](https://github.com/midas-network/covid19-smh-research_resources/tree/main/heterogeneities#vaccination) 
   folder of 
   [covid19-smh-research_resources](https://github.com/midas-network/covid19-smh-research_resources). Vaccination data is extracted from the 
   [CA DPH](https://data.ca.gov/dataset/covid-19-vaccine-progress-dashboard-data) and 
@@ -253,7 +253,7 @@ November 2020-April 2021.
 Weekly case and death data by race/ethnicity are available for phase 1 and 2 in the
 [target-data](./target-data/) folder. For more information, please consult the
 documentation associated with the 
-[disparities round target data](https://github.com/midas-network/covid19-smh-research/blob/main/target-data/README.md#disparities-round).
+[heterogeneities round target data](https://github.com/midas-network/covid19-smh-research/blob/main/target-data/README.md#heterogeneities-round).
 
 
 ### Targets
@@ -285,7 +285,7 @@ For more information please consult the [target data README](./target-data/READM
 Auxiliary data and code are available in the 
 [covid19-smh-research_resources](https://github.com/midas-network/covid19-smh-research_resources) 
 GitHub repository,
-[disparities folder](https://github.com/midas-network/covid19-smh-research_resources/tree/main/disparities)
+[heterogeneities folder](https://github.com/midas-network/covid19-smh-research_resources/tree/main/heterogeneities)
 
 The folder contains multiple sub-folders:
 
@@ -351,7 +351,7 @@ The folder contains multiple sub-folders:
 
 The repository contains a [target-data](./target-data/) folder relevant to the modeling efforts.
 It contains:
-- COVID-19 case and death time series by race/ethnicity for the disparities round. 
+- COVID-19 case and death time series by race/ethnicity for the heterogeneities round. 
 
 For more information, please consult the associated [README file](./target-data/README.md)
 

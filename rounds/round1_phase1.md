@@ -1,6 +1,6 @@
-## Disparities Round
+## Heterogeneities Round
 
-We observed disparities in COVID-19 outcomes by sociodemographic factors such as
+We observed heterogeneities in COVID-19 outcomes by sociodemographic factors such as
 age, location, race/ethnicity, occupation, and socioeconomic status, yet most
 epidemiological models do not account for structural heterogeneities that contribute
 to differential transmission and severity risk among these groups. This round
@@ -16,7 +16,7 @@ We have specified a set of scenarios and target outcomes to allow alignment of
 model projections for collective insights. Scenarios have been designed in
 consultation with academic modeling teams and government agencies (e.g., CDC).
 
-### Disparities Round Phase 1: Can we accurately predict COVID-19 death disparities by race/ethnicity?
+### Heterogeneities Round Phase 1: Can we accurately predict COVID-19 death heterogeneities by race/ethnicity?
 
 In Phase 1, teams will calibrate to case and death data by race/ethnicity from
 5/1/2020 – 11/14/2020 and project forward to 11/15/2020 – 4/3/2021 in a single
@@ -29,11 +29,11 @@ prescribed the perfect scenario conditions; thus full information about new
 variant circulation, non-pharmaceutical interventions (NPIs) such as masking,
 social distancing, and travel restrictions, mobility, and vaccine coverage is
 known over the entire projection period. As a result, we will be able to test
-the ability of models to project disparities over time, after controlling for
+the ability of models to project heterogeneities over time, after controlling for
 other epidemiological and behavioral uncertainties. Phase 1 features a single
 scenario as follows: 
 
-<img src= "https://raw.githubusercontent.com/midas-network/covid19-smh-research/main/rounds/round1_viz/disparities_phase1.png">
+<img src= "https://raw.githubusercontent.com/midas-network/covid19-smh-research/main/rounds/round1_viz/heterogeneities_phase1.png">
 
 
 ### Assumptions
@@ -84,7 +84,7 @@ November 2020-April 2021.
 - Schools were largely closed for the 2020-21 school year in both locations. 
 
 - Weekly SageGraph mobility data is provided at the census tract level, in the 
-  [disparities/mobility/](https://github.com/midas-network/covid19-smh-research_resources/tree/main/disparities#mobility) 
+  [heterogeneities/mobility/](https://github.com/midas-network/covid19-smh-research_resources/tree/main/heterogeneities#mobility) 
   folder of 
   [covid19-smh-research_resources](https://github.com/midas-network/covid19-smh-research_resources)
   GitHub Repositories. 
@@ -96,7 +96,7 @@ November 2020-April 2021.
 
 - Weekly cumulative age- and race/ethnicity-specific vaccination coverage is 
   provided at the state level in the 
-  [disparities/vaccination/](https://github.com/midas-network/covid19-smh-research_resources/tree/main/disparities#vaccination) 
+  [heterogeneities/vaccination/](https://github.com/midas-network/covid19-smh-research_resources/tree/main/heterogeneities#vaccination) 
   folder of 
   [covid19-smh-research_resources](https://github.com/midas-network/covid19-smh-research_resources). Vaccination data is extracted from the 
   [CA DPH](https://data.ca.gov/dataset/covid-19-vaccine-progress-dashboard-data) and 
@@ -172,7 +172,7 @@ November 2020-April 2021.
 Weekly case and death data by race/ethnicity are available for phase 1 and 2 in the
 [target-data](https://github.com/midas-network/covid19-smh-research/tree/main/target-data) folder. For more information, please consult the
 documentation associated with the 
-[disparities round target data](https://github.com/midas-network/covid19-smh-research/blob/main/target-data/README.md#disparities-round).
+[heterogeneities round target data](https://github.com/midas-network/covid19-smh-research/blob/main/target-data/README.md#heterogeneities-round).
 
 
 ### Targets
@@ -204,7 +204,7 @@ For more information please consult the [target data README](https://github.com/
 Auxiliary data and code are available in the 
 [covid19-smh-research_resources](https://github.com/midas-network/covid19-smh-research_resources) 
 GitHub repository,
-[disparities folder](https://github.com/midas-network/covid19-smh-research_resources/tree/main/disparities)
+[heterogeneities folder](https://github.com/midas-network/covid19-smh-research_resources/tree/main/heterogeneities)
 
 The folder contains multiple sub-folders:
 

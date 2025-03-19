@@ -92,7 +92,7 @@ arrow::write_parquet(df, filename, compression = "gzip", compression_level = 9)
 arrow::read_parquet(filename)
 ```
 
-For the disparities round, the date YYYY-MM-DD should correspond to the 
+For the heterogeneities round, the date YYYY-MM-DD should correspond to the 
 **due date**, for example: "`2024-06-25`" from 
 "Phase 1 projections due: 2024-06-25" as noted in the scenario 
 description on the main 
@@ -301,7 +301,7 @@ Both columns should only contain integer number.
 The submission file is expected to have in between 100 to 300 simulation 
 samples (or trajectories) for each "group". 
 
-For round 1 disparities, it is required to have the trajectories grouped at 
+For round 1 heterogeneities, it is required to have the trajectories grouped at 
 least by `"ethnicity"` and `"horizon"`, so it is required that the combination of 
 the `run_grouping` and `stochastic_run` columns contains at least an unique
 identifier for each group containing all the possible value for `"race_ethnicity"` 

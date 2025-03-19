@@ -5,10 +5,10 @@ This folder is used to store target data (also called "ground truth" or
 
 For any questions or issues, please feel free to open an issue. 
 
-## Disparities Round
+## Heterogeneities Round
 
 This folder contains the calibration data for phase 1 and 2 of the COVID-19
-Scenario Modeling Hub (SMH) Disparities Round. 
+Scenario Modeling Hub (SMH) Heterogeneities Round. 
 
 ### Demographic data
 
@@ -81,7 +81,7 @@ is reported to how it is observed in the target data.
 Serology and census data are available in the 
 [covid19-smh-research_resources](https://github.com/midas-network/covid19-smh-research_resources) 
 GitHub repository,
-[disparities folder](https://github.com/midas-network/covid19-smh-research_resources/tree/main/disparities)
+[heterogeneities folder](https://github.com/midas-network/covid19-smh-research_resources/tree/main/heterogeneities)
 
 
 #### Serology and census data
