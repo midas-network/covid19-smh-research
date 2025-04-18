@@ -18,7 +18,7 @@ jobs:
             fetch-depth: 1
             sparse-checkout: |
               .github
-              code
+              src
               hub-config
               auxiliary-data
 
@@ -49,7 +49,7 @@ jobs:
         - name: Run Validation - Open/reopen
           if: ( github.event.action != 'synchronize' )
           run: |
-            Rscript code/validation.R
+            Rscript src/validation.R
           env:
             GH_PR_NUMBER: ${{ github.event.pull_request.number }}
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -57,7 +57,7 @@ jobs:
         - name: Run Validation - Synchronize
           if: ( github.event.action == 'synchronize' )
           run: |
-            Rscript code/validation.R
+            Rscript src/validation.R
           env:
             GH_PR_NUMBER: ${{ github.event.pull_request.number }}
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -70,4 +70,4 @@ jobs:
             name: validation_plot_${{ github.event.pull_request.number }}
             path: ./proj_plot/*
             if-no-files-found: ignore
-            
+
