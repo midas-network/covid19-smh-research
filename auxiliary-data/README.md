@@ -2,6 +2,15 @@
 
 This folder is used to store additional data relevant to the modeling efforts. 
 It contains one folders for location and population data
+
+## Target Data
+
+The  [target-data](./target-data/) contains:
+
+- COVID-19 case and death time series by race/ethnicity for the 
+  heterogeneities round. 
+
+The folder contains also source data and detailed documentation.
   
 ## Location and Census Data
 

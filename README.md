@@ -353,7 +353,15 @@ The repository contains a [target-data](./target-data/) folder relevant to the m
 It contains:
 - COVID-19 case and death time series by race/ethnicity for the heterogeneities round. 
 
-For more information, please consult the associated [README file](./target-data/README.md)
+The target data folder contains the data in the 
+[hubverse format](https://hubverse.io/en/latest/user-guide/target-data.html).
+
+#### Heterogeneity Rounds
+
+For more information, please consult the associated 
+[README file](./auxiliary-data/target-data/README.md). 
+The [auxiliary-data/target-data](./auxiliary-data/target-data/) contains the
+documentation and the data split by round 1 phase in another format
 
 ## Auxiliary Data
 
