@@ -78,7 +78,7 @@ the ability of models to project heterogeneities over time, after controlling fo
 other epidemiological and behavioral uncertainties. Phase 1 features a single
 scenario as follows: 
 
-<img src= "./rounds/round1_viz/heterogeneities_phase1.png">
+<img src= "./auxiliary-data/rounds/round1_viz/heterogeneities_phase1.png">
 
 ### Heterogeneities Round Phase 2: By how much could we have reduced heterogeneities in COVID-19 deaths? 
 
@@ -115,7 +115,7 @@ age-adjusted severity than the White population, the values estimated
 for this racial/ethnic group should be retained and not indexed on the
 White population.** See the round structure below.
 
-<img src= "./rounds/round1_viz/heterogeneities_phase2.png">
+<img src= "./auxiliary-data/rounds/round1_viz/heterogeneities_phase2.png">
 
 ### Assumptions
 
@@ -238,7 +238,7 @@ November 2020-April 2021.
   [Lindsey R. Baden et al. 2020](https://www.nejm.org/doi/full/10.1056/nejmoa2035389),
   [Fernando P. Polack et al. 2020](https://www.nejm.org/doi/full/10.1056/nejmoa2034577),
   [Jerald Sadoff et al. 2021](https://pubmed.ncbi.nlm.nih.gov/33882225/),
-  [Sara E. Oliver et al. 2020](https://www.cdc.gov/mmwr/volumes/69/wr/mm6950e2.htm?fbclid=IwAR1-k3Zmjw3E-wcewxeX03yqdbrj3BROSJuaNhLS5fm_zfIfLlJMcH6Hcaw)). Ad26.COV2.S
+  [Sara E. Oliver et al. 2020](https://www.cdc.gov/mmwr/volumes/69/wr/mm6950e2.htm?fbclid=IwAR1-k3Zmjw3E-wcewxeX03yqdbrj3BROSJuaNhLS5fm_zfIfLlJMcH6Hcaw)). Ad26.COV2.S
   from Janssen was not administered in the US until Feb 27, 2021, so it can be assumed it had
   minimal impact during this study period ([Janssen COVID-19 Vaccine FDA Approval Status](https://www.drugs.com/history/janssen-covid-19-vaccine.html#:~:text=On%20February%2027%2C%202021%2C%20the,years%20of%20age%20and%20older.)).
 
@@ -253,7 +253,7 @@ November 2020-April 2021.
 Weekly case and death data by race/ethnicity are available for phase 1 and 2 in the
 [target-data](./target-data/) folder. For more information, please consult the
 documentation associated with the 
-[heterogeneities round target data](https://github.com/midas-network/covid19-smh-research/blob/main/target-data/README.md#heterogeneities-round).
+[heterogeneities round target data](https://github.com/midas-network/covid19-smh-research/blob/main/auxiliary-data/target-data/README.md#heterogeneities-round).
 
 
 ### Targets
@@ -277,7 +277,7 @@ Given the missingness in demographic disease data and limited data available on 
 reporting rates by race/ethnicity, it will be optional for teams to submit cases. 
 Infections and deaths will be required and only weekly death targets will be evaluated. 
 
-For more information please consult the [target data README](./target-data/README.md).
+For more information please consult the [target data README](./auxiliary-data/target-data/README.md).
 
 
 ### Additional Information
