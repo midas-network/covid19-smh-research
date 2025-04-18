@@ -21,4 +21,8 @@ The folder [location_census/](./location_census/) contains two files:
   for the United States and States: April 1, 2020 to July 1, 
   2022: available 
   [here](https://www.census.gov/data/datasets/time-series/demo/popest/2020s-state-detail.html)
- 
+
+## Model examples
+
+The [model_examples](./model_examples) folder contains model-output and 
+model-metadata examples.

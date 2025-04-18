@@ -156,7 +156,7 @@ simulated transmission/outcomes).
 ### `scenario_id`
 
 The standard scenario id should be used as given in in the scenario 
-description in the [main README](https://github.com/midas-network/rsv-scenario-modeling-hub). 
+description in the [main README](https://github.com/midas-network/covid19-smh-research). 
 Scenario id's include a capitalized letter and date as YYYY-MM-DD, e.g., 
 `A-2020-05-01`.
 
