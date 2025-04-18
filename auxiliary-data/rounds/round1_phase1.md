@@ -172,7 +172,7 @@ November 2020-April 2021.
 Weekly case and death data by race/ethnicity are available for phase 1 and 2 in the
 [target-data](https://github.com/midas-network/covid19-smh-research/tree/main/target-data) folder. For more information, please consult the
 documentation associated with the 
-[heterogeneities round target data](https://github.com/midas-network/covid19-smh-research/blob/main/target-data/README.md#heterogeneities-round).
+[heterogeneities round target data](https://github.com/midas-network/covid19-smh-research/blob/main/auxiliary-data/target-data/README.md#heterogeneities-round).
 
 
 ### Targets
@@ -196,7 +196,7 @@ Given the missingness in demographic disease data and limited data available on 
 reporting rates by race/ethnicity, it will be optional for teams to submit cases. 
 Infections and deaths will be required and only weekly death targets will be evaluated. 
 
-For more information please consult the [target data README](https://github.com/midas-network/covid19-smh-research/tree/main/target-data/README.md).
+For more information please consult the [target data README](https://github.com/midas-network/covid19-smh-research/tree/main/auxiliary-data/target-data/README.md).
 
 
 ### Additional Information
