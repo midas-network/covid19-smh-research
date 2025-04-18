@@ -1,5 +1,5 @@
 {
-  "schema_version": "https://raw.githubusercontent.com/Infectious-Disease-Modeling-Hubs/schemas/main/v2.0.0/tasks-schema.json",
+  "schema_version": "https://raw.githubusercontent.com/hubverse-org/schemas/main/v5.0.0/tasks-schema.json",
   "rounds": [
 		{
       "round_id": "2024-06-25",
@@ -34,15 +34,17 @@
           },
           "output_type": {
             "sample": {
-              "output_type_id": {
+              "output_type_id_params": {
+                "type": "integer",
                 "min_samples_per_task": 100,
                 "max_samples_per_task": 300,
-                "samples_joint_across": ["horizon", "race_ethnicity"]
+                "compound_taskid_set": ["origin_date", "scenario_id", "location", "target"]
               },
               "value" : {
-                "type": "numeric",
+                "type": "double",
                 "minimum": 0
-              }
+              },
+              "is_required": true
             }
           },
           "target_metadata": [
@@ -113,15 +115,17 @@
           },
           "output_type": {
             "sample": {
-              "output_type_id": {
+              "output_type_id_params": {
+                "type": "integer",
                 "min_samples_per_task": 100,
                 "max_samples_per_task": 300,
-                "samples_joint_across": ["horizon", "race_ethnicity"]
+                "compound_taskid_set": ["origin_date", "scenario_id", "location", "target"]
               },
               "value" : {
-                "type": "numeric",
+                "type": "double",
                 "minimum": 0
-              }
+              },
+              "is_required": true
             }
           },
           "target_metadata": [
@@ -193,13 +197,13 @@
           "output_type": {
             "quantile":{
               "output_type_id": {
-                "required": [0.01, 0.025, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 0.975, 0.99],
-                "optional": [0, 1]
+                "required": [0.01, 0.025, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 0.975, 0.99]
               },
               "value" : {
                 "type": "double",
                 "minimum": 0
-              }
+              },
+              "is_required": true
             }
           },
           "target_metadata": [
@@ -271,13 +275,169 @@
           "output_type": {
             "quantile":{
               "output_type_id": {
-                "required": [0.01, 0.025, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 0.975, 0.99],
-                "optional": [0, 1]
+                "required": [0.01, 0.025, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 0.975, 0.99]
               },
               "value" : {
                 "type": "double",
                 "minimum": 0
-              }
+              },
+              "is_required": true
+            }
+          },
+          "target_metadata": [
+            {
+              "target_id": "inc death",
+              "target_name": "Incident deaths",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc death"
+              },
+              "description": "Weekly new deaths due to COVID-19 as reported by state and local departments of public health and aggregated in the NCHS data collection system.",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            },
+            {
+              "target_id": "inc inf",
+              "target_name": "Incident Infection",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc inf"
+              },
+              "description": "Weekly new COVID-19 infection.",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            },
+            {
+              "target_id": "inc case",
+              "target_name": "Incident cases",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc case"
+              },
+              "description": "Weekly newly reported COVID-19 cases",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            }
+          ]
+        },
+        {
+          "task_ids": {
+            "origin_date": {
+              "required": ["2020-11-15"],
+              "optional": null
+            },
+             "scenario_id": {
+              "required": ["A-2020-05-01"],
+              "optional": null
+            },
+            "location": {
+              "required": ["06"],
+              "optional": null
+            },
+            "race_ethnicity": {
+                "required": ["latino", "asian", "black", "white", "other", "overall"],
+                "optional": null
+            },
+            "target": {
+              "required": null,
+              "optional": ["inc death", "inc inf", "inc case"]
+            },
+            "horizon": {
+              "required": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+              "optional":null
+            }
+          },
+          "output_type": {
+            "quantile":{
+              "output_type_id": {
+                "required": [0, 1]
+              },
+              "value" : {
+                "type": "double",
+                "minimum": 0
+              },
+              "is_required": false
+            }
+          },
+          "target_metadata": [
+            {
+              "target_id": "inc death",
+              "target_name": "Incident deaths",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc death"
+              },
+              "description": "Weekly new deaths due to COVID-19 as reported by state and local departments of public health and aggregated in the NCHS data collection system.",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            },
+            {
+              "target_id": "inc inf",
+              "target_name": "Incident Infection",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc inf"
+              },
+              "description": "Weekly new COVID-19 infection.",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            },
+            {
+              "target_id": "inc case",
+              "target_name": "Incident cases",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc case"
+              },
+              "description": "Weekly newly reported COVID-19 cases",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            }
+          ]
+        },
+        {
+          "task_ids": {
+            "origin_date": {
+              "required": ["2020-11-15"],
+              "optional": null
+            },
+             "scenario_id": {
+              "required": ["A-2020-05-01"],
+              "optional": null
+            },
+            "location": {
+              "required": ["37"],
+              "optional": null
+            },
+            "race_ethnicity": {
+                "required": ["asian", "black", "white", "other", "overall"],
+                "optional": null
+            },
+            "target": {
+              "required": null,
+              "optional": ["inc death", "inc inf", "inc case"]
+            },
+            "horizon": {
+              "required": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+              "optional":null
+            }
+          },
+          "output_type": {
+            "quantile":{
+              "output_type_id": {
+                "required": [0, 1]
+              },
+              "value" : {
+                "type": "double",
+                "minimum": 0
+              },
+              "is_required": false
             }
           },
           "target_metadata": [
@@ -358,15 +518,17 @@
           },
           "output_type": {
             "sample": {
-              "output_type_id": {
+              "output_type_id_params": {
+                "type": "integer",
                 "min_samples_per_task": 100,
                 "max_samples_per_task": 300,
-                "samples_joint_across": ["horizon", "race_ethnicity"]
+                "compound_taskid_set": ["origin_date", "scenario_id", "location", "target"]
               },
               "value" : {
-                "type": "numeric",
+                "type": "double",
                 "minimum": 0
-              }
+              },
+              "is_required": true
             }
           },
           "target_metadata": [
@@ -437,15 +599,17 @@
           },
           "output_type": {
             "sample": {
-              "output_type_id": {
+              "output_type_id_params": {
+                "type": "integer",
                 "min_samples_per_task": 100,
                 "max_samples_per_task": 300,
-                "samples_joint_across": ["horizon", "race_ethnicity"]
+                "compound_taskid_set": ["origin_date", "scenario_id", "location", "target"]
               },
               "value" : {
-                "type": "numeric",
+                "type": "double",
                 "minimum": 0
-              }
+              },
+              "is_required": true
             }
           },
           "target_metadata": [
@@ -517,13 +681,13 @@
           "output_type": {
             "quantile":{
               "output_type_id": {
-                "required": [0.01, 0.025, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 0.975, 0.99],
-                "optional": [0, 1]
+                "required": [0.01, 0.025, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 0.975, 0.99]
               },
               "value" : {
                 "type": "double",
                 "minimum": 0
-              }
+              },
+              "is_required": true
             }
           },
           "target_metadata": [
@@ -595,13 +759,169 @@
           "output_type": {
             "quantile":{
               "output_type_id": {
-                "required": [0.01, 0.025, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 0.975, 0.99],
-                "optional": [0, 1]
+                "required": [0.01, 0.025, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 0.975, 0.99]
               },
               "value" : {
                 "type": "double",
                 "minimum": 0
-              }
+              },
+              "is_required": true
+            }
+          },
+          "target_metadata": [
+            {
+              "target_id": "inc death",
+              "target_name": "Incident deaths",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc death"
+              },
+              "description": "Weekly new deaths due to COVID-19 as reported by state and local departments of public health and aggregated in the NCHS data collection system.",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            },
+            {
+              "target_id": "inc inf",
+              "target_name": "Incident Infection",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc inf"
+              },
+              "description": "Weekly new COVID-19 infection.",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            },
+            {
+              "target_id": "inc case",
+              "target_name": "Incident cases",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc case"
+              },
+              "description": "Weekly newly reported COVID-19 cases",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            }
+          ]
+        },
+        {
+          "task_ids": {
+            "origin_date": {
+              "required": ["2020-11-15"],
+              "optional": null
+            },
+             "scenario_id": {
+              "required": ["A-2020-11-15", "B-2020-11-15", "C-2020-11-15", "D-2020-11-15"],
+              "optional": null
+            },
+            "location": {
+              "required": ["06"],
+              "optional": null
+            },
+            "race_ethnicity": {
+                "required": ["latino", "asian", "black", "white", "other", "overall"],
+                "optional": null
+            },
+            "target": {
+              "required": null,
+              "optional": ["inc death", "inc inf", "inc case"]
+            },
+            "horizon": {
+              "required": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+              "optional":null
+            }
+          },
+          "output_type": {
+            "quantile":{
+              "output_type_id": {
+                "required": [0, 1]
+              },
+              "value" : {
+                "type": "double",
+                "minimum": 0
+              },
+              "is_required": false
+            }
+          },
+          "target_metadata": [
+            {
+              "target_id": "inc death",
+              "target_name": "Incident deaths",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc death"
+              },
+              "description": "Weekly new deaths due to COVID-19 as reported by state and local departments of public health and aggregated in the NCHS data collection system.",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            },
+            {
+              "target_id": "inc inf",
+              "target_name": "Incident Infection",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc inf"
+              },
+              "description": "Weekly new COVID-19 infection.",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            },
+            {
+              "target_id": "inc case",
+              "target_name": "Incident cases",
+              "target_units": "count",
+              "target_keys": {
+                "target": "inc case"
+              },
+              "description": "Weekly newly reported COVID-19 cases",
+              "target_type": "discrete",
+              "is_step_ahead": true,
+              "time_unit": "week"
+            }
+          ]
+        },
+        {
+          "task_ids": {
+            "origin_date": {
+              "required": ["2020-11-15"],
+              "optional": null
+            },
+             "scenario_id": {
+              "required": ["A-2020-11-15", "B-2020-11-15", "C-2020-11-15", "D-2020-11-15"],
+              "optional": null
+            },
+            "location": {
+              "required": ["37"],
+              "optional": null
+            },
+            "race_ethnicity": {
+                "required": ["asian", "black", "white", "other", "overall"],
+                "optional": null
+            },
+            "target": {
+              "required": null,
+              "optional": ["inc death", "inc inf", "inc case"]
+            },
+            "horizon": {
+              "required": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+              "optional":null
+            }
+          },
+          "output_type": {
+            "quantile":{
+              "output_type_id": {
+                "required": [0, 1]
+              },
+              "value" : {
+                "type": "double",
+                "minimum": 0
+              },
+              "is_required": false
             }
           },
           "target_metadata": [
