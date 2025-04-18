@@ -33,7 +33,7 @@ the ability of models to project heterogeneities over time, after controlling fo
 other epidemiological and behavioral uncertainties. Phase 1 features a single
 scenario as follows: 
 
-<img src= "https://raw.githubusercontent.com/midas-network/covid19-smh-research/main/rounds/round1_viz/heterogeneities_phase1.png">
+<img src= "https://raw.githubusercontent.com/midas-network/covid19-smh-research/main/auxiliary-data/rounds/round1_viz/heterogeneities_phase1.png">
 
 
 ### Assumptions

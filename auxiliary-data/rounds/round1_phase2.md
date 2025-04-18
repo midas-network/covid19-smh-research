@@ -51,7 +51,7 @@ age-adjusted severity than the White population, the values estimated
 for this racial/ethnic group should be retained and not indexed on the
 White population.** See the round structure below.
 
-<img src= "https://raw.githubusercontent.com/midas-network/covid19-smh-research/main/rounds/round1_viz/heterogeneities_phase2.png">
+<img src= "https://raw.githubusercontent.com/midas-network/covid19-smh-research/main/auxiliary-data/rounds/round1_viz/heterogeneities_phase2.png">
 
 
 ### Assumptions

@@ -24,5 +24,10 @@ The folder [location_census/](./location_census/) contains two files:
 
 ## Model examples
 
-The [model_examples](./model_examples) folder contains model-output and 
+The [model_examples](./model_examples/) folder contains model-output and 
 model-metadata examples.
+
+## Rounds
+The [rounds](./rounds/) folder contains the round information in a markdown 
+format with a folder names roundX_viz with X being the round number, containing 
+associated visualization (for example, scenario table in a PNG format).
