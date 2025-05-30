@@ -4,7 +4,7 @@ model_name: "Reflecting Inequity in Future Time for SARS-CoV-2"
 model_abbr: "RIFTcov"
 model_contributors: [
   {
-    "name": "Sophie Larsen",
+    "name": "Soren L Larsen",
     "affiliation": "Program in Ecology, Evolution, and Conservation Biology, University of Illinois at Urbana-Champaign, Urbana, IL, USA",
     "email": "sll4@illinois.edu"
   },
