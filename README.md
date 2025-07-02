@@ -370,6 +370,13 @@ An additional repository containing the auxiliary data is available on GitHub:
 This repository contains additional code and data that are relevant to the 
 modeling efforts. 
 
+## Round information
+
+The repository also contains round information in a 
+[rounds/](./auxiliary-data/rounds) folder:
+
+- [Round 1 - Phase I](./auxiliary-data/rounds/round1_phase1.md)
+- [Round 1 - Phase II](./auxiliary-data/rounds/round1_phase2.md)
 
 ## Data license and reuse
 
