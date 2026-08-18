@@ -104,7 +104,7 @@ if (isFALSE(all(check))) {
       }
       arg_list <- list(path = val_path, js_def = js_def_file, lst_gs = lst_gs,
                        pop_path = pop_path, merge_sample_col = merge_col,
-                       partition = partition, round_id = round_id, 
+                       partition = partition, round_id = round_id,
                        verbose = FALSE)
       test <- capture.output(try(do.call(SMHvalidation::validate_submission,
                                          arg_list)))
@@ -150,13 +150,7 @@ if (!all(is.na(test_tot))) {
   # Post validation results as comment on the open PR
   test_valid <- purrr::map(test_tot, "valid")
   message <- purrr::map(test_valid, paste, collapse = "\n")
-
-  lapply(seq_len(length(message)), function(x) {
-    gh::gh(paste0("POST /repos/", "midas-network/covid19-smh-research/",
-                  "issues/", Sys.getenv("GH_PR_NUMBER"), "/comments"),
-           body = message[[x]],
-           .token = Sys.getenv("GH_TOKEN"))
-  })
+  pr_mess <- paste(message, collapse = "\n\n")
 
   # Post visualization results as comment on the open PR
   test_viz <- purrr::map(test_tot, "viz")
@@ -176,13 +170,10 @@ if (!all(is.na(test_tot))) {
             " if the validation does not return any error, please feel free to",
             " tag `@LucieContamin` for any question."))
     }
-
-    gh::gh(paste0("POST /repos/", "midas-network/covid19-smh-research/",
-                  "issues/", Sys.getenv("GH_PR_NUMBER"),"/comments"),
-           body = message_plot,
-           .token = Sys.getenv("GH_TOKEN"))
+    pr_mess <- paste(pr_mess, message_plot, collapse = "\n\n")
   }
 
+  writeLines(pr_mess, paste0("comment.txt"))
 
   # Validate or stop the github actions
   if (any(grepl("(\U000274c )?Error", test_valid))) {

@@ -1,6 +1,6 @@
 name: Validate and Visualize Submission
 on:
-  pull_request_target:
+  pull_request:
     types: [synchronize, opened, reopened]
     branches:
       - main
@@ -13,7 +13,7 @@ jobs:
 
         steps:
         - name: Checkout repository
-          uses: actions/checkout@v3
+          uses: actions/checkout@v6
           with:
             fetch-depth: 1
             sparse-checkout: |
@@ -47,6 +47,8 @@ jobs:
             GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
         - name: Run Validation - Open/reopen
+          id: validation_open
+          continue-on-error: true
           if: ( github.event.action != 'synchronize' )
           run: |
             Rscript src/validation.R
@@ -55,6 +57,8 @@ jobs:
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         - name: Run Validation - Synchronize
+          id: validation_sync
+          continue-on-error: true
           if: ( github.event.action == 'synchronize' )
           run: |
             Rscript src/validation.R
@@ -70,4 +74,23 @@ jobs:
             name: validation_plot_${{ github.event.pull_request.number }}
             path: ./proj_plot/*
             if-no-files-found: ignore
+
+        - name: Record which PR this belongs to
+          if: always()
+          run: |
+            echo "${{ github.event.pull_request.number }}" > pr_number.txt
+
+        - name: Upload result as artifact
+          if: always()
+          uses: actions/upload-artifact@v4
+          with:
+            name: pr-comment
+            path: |
+              comment.txt
+              pr_number.txt
+            retention-days: 1
+
+        - name: Fail if error in validation
+          if: steps.validation_open.outcome == 'failure' || steps.validation_sync.outcome == 'failure'
+          run: exit 1
 
